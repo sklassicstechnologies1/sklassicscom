@@ -16,7 +16,6 @@ import DataSciencePage from './CourseTemplate/DataSciencePage';
 import AiPage from './CourseTemplate/AiPage';
 import MachineLearning from './CourseTemplate/MachineLearning';
 import DataAnalytics from './CourseTemplate/DataAnalytics';
-// import WebDevelopment from './CourseTemplate/WebDevelopment';
 import NLP from './CourseTemplate/NLP';
 import BigData from './CourseTemplate/BigData';
 import PowerBi from './CourseTemplate/PowerBi';
@@ -27,10 +26,15 @@ import ComputerVision from './CourseTemplate/ComputerVision';
 import DeepLearning from './CourseTemplate/DeepLearning';
 import GenerativeAi from './CourseTemplate/GenerativeAi';
 import DataScience2 from './CourseTemplate/DataScience2';
-
-// import Business Analytics from './CourseTemplate/BusinessAnalytics';
-// import NodeJs from './CourseTemplate/NodeJs';
-
+import JavaFullStack from './CourseTemplate/JavaFullStack';
+import PythonFullStack from './CourseTemplate/PythonFullStack';
+import HtmlCssJs from './CourseTemplate/HtmlCssJs';
+import Python from './CourseTemplate/Python';
+import C from './CourseTemplate/C';
+import Java from './CourseTemplate/Java';
+import R from './CourseTemplate/R';
+import Flask from './CourseTemplate/Flask';
+import Aptitude from './CourseTemplate/Aptitude';
 
 
 function App() {
@@ -50,34 +54,34 @@ function App() {
         <Route path="/prediction-of-water-quality" element={<WaterQuality />} />
 
         <Route path="/workshops" element={<Workshops />} />
+        
+        {/* Course Routes */}
         <Route path="/data-science" element={<DataSciencePage/>} />
         <Route path="/ai" element={<AiPage/>} />
-        <Route path="/Data Science" element={<DataScience2/>} />
-        <Route path="/MachineLearning" element={<MachineLearning/>} />
-        <Route path="/DataAnalytics" element={<DataAnalytics/>} />
-        {/* <Route path="/WebDevelopment" element={<WebDevelopment/>} /> */}
-        <Route path="/Natural Language Processing" element={<NLP/>} />
-        {/* <Route path="/Node Js" element={<NodeJs/>} /> */}
-        {/* <Route path="/BusinessAnalytics" element={<BusinessAnalytics/>} /> */}
-        <Route path="/Big Data Analytics" element={<BigData/>} />
+        <Route path="/data-science-basic" element={<DataScience2/>} />
+        <Route path="/machine-learning" element={<MachineLearning/>} />
+        <Route path="/data-analytics" element={<DataAnalytics/>} />
+        <Route path="/natural-language-processing" element={<NLP/>} />
+        <Route path="/big-data-analytics" element={<BigData/>} />
         <Route path="/powerbi" element={<PowerBi/>} />
-        <Route path="/Tableau" element={<Tableau/>} />
-        <Route path="/Excel" element={<Excel/>} />
-        <Route path="/SQL" element={<Sql/>} />
-        <Route path="/ComputerVision" element={<ComputerVision/>} />
-        <Route path="/DeepLearning" element={<DeepLearning/>} />
-        <Route path="/GenerativeAi" element={<GenerativeAi/>} />
-
-
-        {/* "Big Data Analytics": "/Big Data Analytics",
-  "Power BI": "/Power BI",
-  "Tableau": "/Tableau",
-  "Excel": "/Excel",
-  "SQL": "/SQL", */}
-
+        <Route path="/tableau" element={<Tableau/>} />
+        <Route path="/excel" element={<Excel/>} />
+        <Route path="/sql" element={<Sql/>} />
+        <Route path="/computer-vision" element={<ComputerVision/>} />
+        <Route path="/deep-learning" element={<DeepLearning/>} />
+        <Route path="/generative-ai" element={<GenerativeAi/>} />
+        <Route path="/java-full-stack" element={<JavaFullStack/>} />
+        <Route path="/python-full-stack" element={<PythonFullStack/>} />
+        <Route path="/html-css-js" element={<HtmlCssJs/>} />
+        <Route path="/python-programming" element={<Python/>} />
+        <Route path="/C-programming" element={<C/>} />
+        <Route path="/Java-programming" element={<Java/>} />
+        <Route path="/R-programming" element={<R/>} />
+        <Route path="/Flask" element={<Flask/>} />
+        <Route path="/Aptitude" element={<Aptitude/>} />
       </Routes>
+      
       <Footer />
-
     </>
   )
 }

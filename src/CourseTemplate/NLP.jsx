@@ -265,11 +265,11 @@ Coming Transformation To An AI-Powered Future.
                 />
                 
                 {/* Optional overlay for interactive elements */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
                     <p className="text-sm">Certificate of Completion</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

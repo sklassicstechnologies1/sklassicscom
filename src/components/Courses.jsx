@@ -190,26 +190,31 @@ const courses = [
 ];
 
 const courseRouteMap = {
-   "Data Science Full Stack": "/data-science",
+  "Data Science Full Stack": "/data-science",
   "Artificial Intelligence": "/ai",
-  "Data Science": "/Data Science",
-  "Machine Learning": "/MachineLearning",
-  "Data Analytics": "/DataAnalytics",
-  // "Web Development": "/WebDevelopment",
-  "Natural Language Processing": "/Natural Language Processing",
-  // "Node Js": "/Node Js",
-  // "Business Analytics": "/Business Analytics",
-  "Big Data Analytics": "/Big Data Analytics",
+  "Data Science": "/data-science-basic",
+  "Machine Learning": "/machine-learning",
+  "Data Analytics": "/data-analytics",
+  "Natural Language Processing": "/natural-language-processing",
+  "Business Analytics": "/business-analytics",
+  "Big Data Analytics": "/big-data-analytics",
   "Power BI": "/powerbi",
-  "Tableau": "/Tableau",
-  "Excel": "/Excel",
-  "SQL": "/SQL",
-  "Computer Vision": "/ComputerVision",
-  "Deep Learning": "/DeepLearning",
-  "GenerativeAi": "/GenerativeAi",
-  // Add more routes as needed
+  "Tableau": "/tableau",
+  "Excel": "/excel",
+  "SQL": "/sql",
+  "Computer Vision": "/computer-vision",
+  "Deep Learning": "/deep-learning",
+  "Generative AI": "/generative-ai",
+  "Java Full Stack": "/java-full-stack",
+  "Python Full Stack": "/python-full-stack",
+  "HTML CSS & JS": "/html-css-js",
+  "Python Programming": "/python-programming",
+  "C Programming": "/C-programming",
+  "Java Programming": "/java-programming",
+  "R Programming": "/R-programming",
+  "Flask": "/Flask",
+  "Aptitude": "/Aptitude",
 };
-
 const Courses = () => {
   const navigate = useNavigate();
 

@@ -1,6 +1,5 @@
 import React from "react";
-// import Cert from "./Cert";
-import courseimg14 from "../assets/courseimg14.jpg";
+import courseimg24 from "../assets/courseimg24.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,35 +7,22 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const DeepLearning = () => {
+const Aptitude = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg14})` }}
+        style={{ backgroundImage: `url(${courseimg24})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Deep Learning</h1>
+          <h1 className="text-5xl font-extrabold mb-10">Aptitude</h1>
 
-          <ul className="space-y-4 text-lg leading-relaxed">
-
-<li>Learn from AI professionals.</li>
-
-<li>Earn a deep learning certification.</li>
-
-<li>Work on hands-on projects.</li>
-
-<li>Master TensorFlow, PyTorch, and advanced algorithms.</li>
-          </ul>
-          {/* <h3>
-            <strong>
-           Course Duration : 45 days
-            </strong>
-          </h3> */}
-          
+          <p className="space-y-4 text-lg leading-relaxed">
+            Learn Data Science from IIT Madras faculty & Industry experts and earn a Data Science certification from India's best Engineering College. Become a Data Scientist through multiple Data Science courses covered in this 7-month data science certification program with hands-on exercises & Project work. Master skills like Python, SQL, Machine Learning, Artificial Intelligence, PowerBI and more.
+          </p>
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
             Buy for ₹20,000
@@ -53,15 +39,13 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-              Advance your expertise with our Deep Learning course, designed for those looking to dive deep into the complexities of neural networks, machine learning, and artificial intelligence. This course covers foundational concepts and advanced techniques, including convolutional and recurrent neural networks, TensorFlow, and Keras. You’ll gain hands-on experience through projects that apply deep learning to real-world problems.
+                This online Data Science advanced certification course led by the expert faculty aims at helping you master all the basic and advanced level skills that are crucial in the field of Data Science, Machine Learning, Deep Learning, and Artificial Intelligence.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-               
-               
-                <li> Cutting-Edge Content: Study the latest in deep learning advancements.</li>
-                <li>Project-Driven Learning**: Implement deep learning models in various sectors.</li>
-                <li>Expert Mentorship: Guidance from professionals with deep industry experience.</li>
+                <li>One-on-One with Industry</li>
+                <li>Placement Assistance</li>
+                <li>1:1 Mock Interview</li>
               </ul>
             </div>
 
@@ -69,11 +53,12 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-
-<li>Data scientists and machine learning engineers looking to specialize in deep learning.</li>
-<li>Students with a background in computer science or related fields.</li>
-<li>Professionals in tech seeking to enhance their AI capabilities.</li>
-
+                <li>Individuals with a bachelor's degree and a keen interest to learn AI and Data Science</li>
+                <li>IT professionals looking for a career transition as Data Scientists and Artificial Intelligence Engineers</li>
+                <li>Professionals aiming to move ahead in their IT career</li>
+                <li>Artificial Intelligence and Business Intelligence professionals</li>
+                <li>Developers and Project Managers</li>
+                <li>Freshers who aspire to build their career in the field of Artificial Intelligence and Data Science</li>
               </ul>
             </div>
 
@@ -82,129 +67,27 @@ const DeepLearning = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
                 {[
-                  "Fundamentals Of Deep Learning",
-                  "Artificial Neural Networks (Ann)",
-                  "Convolutional Neural Networks (CNN)",
-                  "Recurrent Neural Networks (RNN)",
-                  "Regional Convolutional Neural Networks (R-CNN)",
-                  "Representation Learning And Generative Adversarial Networks (GAN)",
-                  "Deep Learning Architectures",
-                  "Deep Learning Applications For Reinforcement Learning And Nlp",
-                  "Projects",
-                ].map((item, index) => {
-                  if (item === "Fundamentals Of Computer Vision") {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                          <ul className="list-disc list-inside space-y-1">
-                            <li>Introduction to Computer Vision</li>
-                            <li>Digital Image Fundamentals</li>
-                            <li>Image Representation and Formats</li>
-                            <li>Color Spaces and Models</li>
-                            <li>Basic Image Operations</li>
-                            <li>Image Quality and Enhancement</li>
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  } else if (item === "Image Processing Techniques") {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                          <ul className="list-disc list-inside space-y-1">
-                            <li>Filtering and Convolution</li>
-                            <li>Morphological Operations</li>
-                            <li>Edge Detection Algorithms</li>
-                            <li>Image Segmentation</li>
-                            <li>Noise Reduction Techniques</li>
-                            <li>Image Transformation</li>
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  } else if (item === "Feature Detection And Description") {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                          <ul className="list-disc list-inside space-y-1">
-                            <li>Corner Detection (Harris, Shi-Tomasi)</li>
-                            <li>Scale-Invariant Feature Transform (SIFT)</li>
-                            <li>Speeded Up Robust Features (SURF)</li>
-                            <li>ORB (Oriented FAST and Rotated BRIEF)</li>
-                            <li>Feature Matching Algorithms</li>
-                            <li>Feature Descriptors</li>
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  } else if (item === "Object Detection And Recognition") {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                          <ul className="list-disc list-inside space-y-1">
-                            <li>Template Matching</li>
-                            <li>Haar Cascades</li>
-                            <li>HOG (Histogram of Oriented Gradients)</li>
-                            <li>Face Detection and Recognition</li>
-                            <li>Object Classification</li>
-                            <li>Multi-object Detection</li>
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  } else {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-700 text-sm">
-                          <p>Module details coming soon.</p>
-                        </div>
-                      </details>
-                    );
-                  }
-                })}
+                  "Aptitude",
+               
+                ].map((item, index) => (
+                  <details
+                    key={index}
+                    className="group border border-purple-800 rounded overflow-hidden"
+                  >
+                    <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <span>{item}</span>
+                      <span className="text-xl font-bold group-open:hidden">+</span>
+                      <span className="text-xl font-bold hidden group-open:block">-</span>
+                    </summary>
+                    <div className="bg-white px-4 py-3 text-gray-800 text-sm">
+                      <p>soon content will be updated</p>
+                    </div>
+                  </details>
+                ))}
               </div>
             </div>
           </div>
+
 
           {/* Right Side: Corporate Training Card */}
           <div className="sticky top-24 self-start">
@@ -244,19 +127,14 @@ const DeepLearning = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-              Why Pursue the Deep Learning Course?
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 Lowercase tracking-wide">
+                Courses focused on building strong foundational skills for career growth
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <ul className="list-disc list-inside space-y-2">
-              
-              <li>Cutting-Edge Technology: Deep learning is at the forefront of artificial intelligence, driving innovations in areas such as image and speech recognition, autonomous systems, and more.</li>
-              <li>Career Growth: The demand for deep learning expertise is rapidly growing across industries, offering lucrative career opportunities in AI research, data science, and machine learning engineering.</li>
-              <li>Hands-On Learning: Gain practical experience by working on projects that simulate real-world applications, enhancing your ability to deploy deep learning models effectively.</li>
-              <li>Industry Relevance: Deep learning frameworks like TensorFlow and PyTorch are widely adopted in industry, ensuring that skills acquired are directly applicable to current AI projects and developments.</li>
-              <li>Innovation Potential: Mastering deep learning allows you to contribute to groundbreaking advancements in artificial intelligence, shaping the future of technology and its applications.</li>
-              </ul>
+                <p>
+                  Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.
+                </p>
               </div>
             </div>
 
@@ -268,13 +146,6 @@ const DeepLearning = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -370,23 +241,22 @@ const DeepLearning = () => {
             </div>
             <div className="space-y-4">
               {[
-                 {
-                    question: " What deep learning frameworks are covered in the course?",
-                    answer: "The course covers popular deep learning frameworks such as TensorFlow and PyTorch, providing hands-on experience in implementing neural networks and advanced algorithms."
-                  },
-                  {
-                    question: "How will hands-on projects help in understanding deep learning concepts?",
-                    answer: "Hands-on projects allow you to apply theoretical knowledge to practical scenarios, helping you grasp complex concepts and gain proficiency in developing and deploying deep learning models."
-                  },
-                  {
-                    question: "Are there any prerequisites for enrolling in the Deep Learning course?",
-                    answer: "Basic knowledge of Python programming and familiarity with machine learning concepts are recommended. A strong understanding of linear algebra and calculus is beneficial for understanding advanced algorithms."
-                  },
-                  
-                  {
-                    question: "What career paths can a Deep Learning certification lead to?",
-                    answer: "A Deep Learning certification qualifies you for roles such as deep learning engineer, AI researcher, machine learning engineer, and data scientist in industries ranging from healthcare and finance to autonomous vehicles and robotics."
-                  }
+                {
+                  question: "Why should I enroll in this Data Science certification course?",
+                  answer: "We offer the best Data Science courses online for professionals who want to expand their knowledge base and start a career in this field. There are many reasons for choosing Intellipaat: A personal mentor to track your progress, Immersive online instructor-led sessions conducted by SMEs, Extensive LMS, allowing you to view recorded sessions within 3 hours, Real-time exercises, assignments, and projects, 24/7 learning support, A large community of like-minded learners, Industry-recognized Intellipaat badge, Personalized job support"
+                },
+                {
+                  question: "What will you learn in this best Data Scientist course?",
+                  answer: "We offer the best Data Science courses online for professionals who want to expand their knowledge base and start a career in this field. There are many reasons for choosing Intellipaat: A personal mentor to track your progress, Immersive online instructor-led sessions conducted by SMEs, Extensive LMS, allowing you to view recorded sessions within 3 hours, Real-time exercises, assignments, and projects, 24/7 learning support, A large community of like-minded learners, Industry-recognized Intellipaat badge, Personalized job support"
+                },
+                {
+                  question: "Can I repeat the classes?",
+                  answer: "We offer the best Data Science courses online for professionals who want to expand their knowledge base and start a career in this field. There are many reasons for choosing Intellipaat: A personal mentor to track your progress, Immersive online instructor-led sessions conducted by SMEs, Extensive LMS, allowing you to view recorded sessions within 3 hours, Real-time exercises, assignments, and projects, 24/7 learning support, A large community of like-minded learners, Industry-recognized Intellipaat badge, Personalized job support"
+                },
+                {
+                  question: "Do you offer live projects as assignments?",
+                  answer: "We offer the best Data Science courses online for professionals who want to expand their knowledge base and start a career in this field. There are many reasons for choosing Intellipaat: A personal mentor to track your progress, Immersive online instructor-led sessions conducted by SMEs, Extensive LMS, allowing you to view recorded sessions within 3 hours, Real-time exercises, assignments, and projects, 24/7 learning support, A large community of like-minded learners, Industry-recognized Intellipaat badge, Personalized job support"
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -425,14 +295,17 @@ const DeepLearning = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Course 1: Natural Language Processing */}
+              {/* Course 1: Business Analytics */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg6})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Natural Language Processing</h3>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Business Analytics</h3>
                   <p className="text-gray-600 text-sm mb-3">2 Months</p>
                   <p className="text-red-600 font-bold text-xl">₹20,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹20,000
+                  </button>
                 </div>
               </div>
 
@@ -444,17 +317,23 @@ const DeepLearning = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Big Data Analytics</h3>
                   <p className="text-gray-600 text-sm mb-3">3 Months</p>
                   <p className="text-red-600 font-bold text-xl">₹30,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹30,000
+                  </button>
                 </div>
               </div>
 
-              {/* Course 3: Tableau */}
+              {/* Course 3: Machine Learning */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg10})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Tableau</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Machine Learning</h3>
+                  <p className="text-gray-600 text-sm mb-3">2 Months</p>
+                  <p className="text-red-600 font-bold text-xl">₹20,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹20,000
+                  </button>
                 </div>
               </div>
 
@@ -464,8 +343,11 @@ const DeepLearning = () => {
                 </div>
                 <div className="p-6 bg-gray-50">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Power BI</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
+                  <p className="text-gray-600 text-sm mb-3">2 Months</p>
                   <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹15,000
+                  </button>
                 </div>
               </div>
             </div>
@@ -476,4 +358,4 @@ const DeepLearning = () => {
   );
 };
 
-export default DeepLearning;
+export default Aptitude;

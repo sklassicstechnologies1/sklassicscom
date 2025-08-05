@@ -1,6 +1,5 @@
 import React from "react";
-// import Cert from "./Cert";
-import courseimg14 from "../assets/courseimg14.jpg";
+import courseimg19 from "../assets/courseimg19.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,38 +7,27 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const DeepLearning = () => {
+const Python = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg14})` }}
+        style={{ backgroundImage: `url(${courseimg19})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Deep Learning</h1>
+          <h1 className="text-5xl font-extrabold mb-10">Python Programming</h1>
 
           <ul className="space-y-4 text-lg leading-relaxed">
-
-<li>Learn from AI professionals.</li>
-
-<li>Earn a deep learning certification.</li>
-
-<li>Work on hands-on projects.</li>
-
-<li>Master TensorFlow, PyTorch, and advanced algorithms.</li>
+            <li>Learn AI with Industrial Experts.</li>
+            <li>Work on real-world projects.</li>
+            <li>Master Python with libraries.</li>
           </ul>
-          {/* <h3>
-            <strong>
-           Course Duration : 45 days
-            </strong>
-          </h3> */}
-          
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹20,000
+            Buy for ₹15,000
           </button>
         </div>
       </section>
@@ -53,15 +41,16 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-              Advance your expertise with our Deep Learning course, designed for those looking to dive deep into the complexities of neural networks, machine learning, and artificial intelligence. This course covers foundational concepts and advanced techniques, including convolutional and recurrent neural networks, TensorFlow, and Keras. You’ll gain hands-on experience through projects that apply deep learning to real-world problems.
+                Python is a programming language that is widely used in web applications, 
+                software development, data science, and machine learning (ML). Developers 
+                use Python because it is efficient and easy to learn and can run on many 
+                different platforms.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-               
-               
-                <li> Cutting-Edge Content: Study the latest in deep learning advancements.</li>
-                <li>Project-Driven Learning**: Implement deep learning models in various sectors.</li>
-                <li>Expert Mentorship: Guidance from professionals with deep industry experience.</li>
+                <li>Hands-On Experience: Gain practical Knowledge Python.</li>
+                <li>Industry-Relevant Projects: Work on real-life scenarios to understand the challenges and solutions in AI.</li>
+                <li>Expert Guidance: Learn from professionals who have extensive experience.</li>
               </ul>
             </div>
 
@@ -69,11 +58,10 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-
-<li>Data scientists and machine learning engineers looking to specialize in deep learning.</li>
-<li>Students with a background in computer science or related fields.</li>
-<li>Professionals in tech seeking to enhance their AI capabilities.</li>
-
+                <li>Individuals with a bachelor's degree keen to learn Python.</li>
+                <li>IT Professionals looking for career transition Python Developers.</li>
+                <li>Business executives and managers who oversee data-intensive projects.</li>
+                <li>Developers and Project Managers.</li>
               </ul>
             </div>
 
@@ -82,17 +70,19 @@ const DeepLearning = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
                 {[
-                  "Fundamentals Of Deep Learning",
-                  "Artificial Neural Networks (Ann)",
-                  "Convolutional Neural Networks (CNN)",
-                  "Recurrent Neural Networks (RNN)",
-                  "Regional Convolutional Neural Networks (R-CNN)",
-                  "Representation Learning And Generative Adversarial Networks (GAN)",
-                  "Deep Learning Architectures",
-                  "Deep Learning Applications For Reinforcement Learning And Nlp",
-                  "Projects",
+                  "Python Programming and Logic Building",
+                  "Object-Oriented Programming",
+                  "File Handling and Exception Handling",
+                  "Regular Expression, Modules and Packages",
+                  "Data Structures",
+                  "Higher-Order Functions",
+                  "Python Package Manager",
+                  "Statistics With Numpy",
+                  "Data Analysis with Pandas",
+                  "Data Visualization with Matplotlib",
+                  "Coding"
                 ].map((item, index) => {
-                  if (item === "Fundamentals Of Computer Vision") {
+                  if (item === "Python Programming and Logic Building") {
                     return (
                       <details
                         key={index}
@@ -104,18 +94,45 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Introduction To Python</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Introduction to Computer Vision</li>
-                            <li>Digital Image Fundamentals</li>
-                            <li>Image Representation and Formats</li>
-                            <li>Color Spaces and Models</li>
-                            <li>Basic Image Operations</li>
-                            <li>Image Quality and Enhancement</li>
+                            <li>Installation</li>
+                            <li>Python Org, Python 3</li>
+                            <li>Variables</li>
+                            <li>Print Function</li>
+                            <li>Input From User</li>
+                            <li>Data Types</li>
+                            <li>Type Conversion</li>
+                            <li>First Program</li>
+                            <li>Operators</li>
+                            <li>Arithmetic Operators</li>
+                            <li>Relational Operators</li>
+                            <li>Bitwise Operators</li>
+                            <li>Logical Operators</li>
+                            <li>Assignment Operators</li>
+                            <li>Compound Operators</li>
+                            <li>Membership Operators</li>
+                            <li>Identity Operators</li>
+                            <li>Conditional Statements</li>
+                            <li>If Else</li>
+                            <li>If</li>
+                            <li>Else</li>
+                            <li>El If (Else If)</li>
+                            <li>If Else Ternary Expression</li>
+                            <li>While Loop</li>
+                            <li>While Loop Logic Building</li>
+                            <li>Series Based Questions</li>
+                            <li>Break</li>
+                            <li>Continue</li>
+                            <li>Nested While Loops</li>
+                            <li>Pattern-Based Questions</li>
+                            <li>Pass</li>
+                            <li>Loop Else</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Image Processing Techniques") {
+                  } else if (item === "Object-Oriented Programming") {
                     return (
                       <details
                         key={index}
@@ -127,18 +144,21 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Advanced OOP Concepts</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Filtering and Convolution</li>
-                            <li>Morphological Operations</li>
-                            <li>Edge Detection Algorithms</li>
-                            <li>Image Segmentation</li>
-                            <li>Noise Reduction Techniques</li>
-                            <li>Image Transformation</li>
+                            <li>Classes</li>
+                            <li>Objects</li>
+                            <li>Method Calls</li>
+                            <li>Inheritance And Its Types</li>
+                            <li>Overloading</li>
+                            <li>Overriding</li>
+                            <li>Data Hiding</li>
+                            <li>Operator Overloading</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Feature Detection And Description") {
+                  } else if (item === "File Handling and Exception Handling") {
                     return (
                       <details
                         key={index}
@@ -150,18 +170,27 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">File Handling Basics</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Corner Detection (Harris, Shi-Tomasi)</li>
-                            <li>Scale-Invariant Feature Transform (SIFT)</li>
-                            <li>Speeded Up Robust Features (SURF)</li>
-                            <li>ORB (Oriented FAST and Rotated BRIEF)</li>
-                            <li>Feature Matching Algorithms</li>
-                            <li>Feature Descriptors</li>
+                            <li>Opening Files</li>
+                            <li>Reading Files</li>
+                            <li>Writing Files</li>
+                            <li>Editing Files</li>
+                            <li>Working With Different Extensions Of File</li>
+                            <li>With Statements</li>
+                            <li>Exception Handling</li>
+                            <li>Common Exceptions</li>
+                            <li>Try</li>
+                            <li>Except</li>
+                            <li>Try Except Else</li>
+                            <li>Finally</li>
+                            <li>Raising Exceptions</li>
+                            <li>Assertion</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Object Detection And Recognition") {
+                  } else if (item === "Regular Expression, Modules and Packages") {
                     return (
                       <details
                         key={index}
@@ -173,13 +202,182 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Regular Expressions and Modules</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Template Matching</li>
-                            <li>Haar Cascades</li>
-                            <li>HOG (Histogram of Oriented Gradients)</li>
-                            <li>Face Detection and Recognition</li>
-                            <li>Object Classification</li>
-                            <li>Multi-object Detection</li>
+                            <li>Basic Re Functions</li>
+                            <li>Patterns</li>
+                            <li>Meta Characters</li>
+                            <li>Character Classes</li>
+                            <li>Different Types Of Modules</li>
+                            <li>Inbuilt Modules</li>
+                            <li>Os</li>
+                            <li>Sys</li>
+                            <li>Statistics</li>
+                            <li>Math</li>
+                            <li>String</li>
+                            <li>Random</li>
+                            <li>Create Your Own Module</li>
+                            <li>Building Packages</li>
+                            <li>Build Your Own Python Module And Deploy It On Pip</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Data Structures") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Data Structures in Python</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Stack</li>
+                            <li>Queue</li>
+                            <li>Linked Lists</li>
+                            <li>Sorting</li>
+                            <li>Searching</li>
+                            <li>Linear Search</li>
+                            <li>Binary Search</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Higher-Order Functions") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Functional Programming</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Function As A Parameter</li>
+                            <li>Function As A Return Value</li>
+                            <li>Closures</li>
+                            <li>Decorators</li>
+                            <li>Map, Filter, Reduce Functions</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Python Package Manager") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Pip Package Manager</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>What Is Pip?</li>
+                            <li>Installation</li>
+                            <li>Pip Freeze</li>
+                            <li>Creating Your Own Package</li>
+                            <li>Upload It On Pip</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Statistics With Numpy") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Numpy for Statistics</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Statistics</li>
+                            <li>Numpy Basics</li>
+                            <li>Working With Matrix</li>
+                            <li>Linear Algebra Operations</li>
+                            <li>Descriptive Statistics</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Data Analysis with Pandas") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Pandas for Data Analysis</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Data Analysis Basics</li>
+                            <li>Dataframe Operations</li>
+                            <li>Working With 2-Dimensional Data</li>
+                            <li>Data Cleaning</li>
+                            <li>Data Grouping</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Data Visualization with Matplotlib") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Matplotlib for Visualization</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Matplotlib Basics</li>
+                            <li>Working With Plots</li>
+                            <li>Plot</li>
+                            <li>Pie Chart</li>
+                            <li>Histogram</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Coding") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Practical Coding Exercises</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Hands On Experience With Different Logic Questions</li>
                           </ul>
                         </div>
                       </details>
@@ -244,19 +442,17 @@ const DeepLearning = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-              Why Pursue the Deep Learning Course?
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 Lowercase tracking-wide">
+                Why Pursue a Career in Python?
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <ul className="list-disc list-inside space-y-2">
-              
-              <li>Cutting-Edge Technology: Deep learning is at the forefront of artificial intelligence, driving innovations in areas such as image and speech recognition, autonomous systems, and more.</li>
-              <li>Career Growth: The demand for deep learning expertise is rapidly growing across industries, offering lucrative career opportunities in AI research, data science, and machine learning engineering.</li>
-              <li>Hands-On Learning: Gain practical experience by working on projects that simulate real-world applications, enhancing your ability to deploy deep learning models effectively.</li>
-              <li>Industry Relevance: Deep learning frameworks like TensorFlow and PyTorch are widely adopted in industry, ensuring that skills acquired are directly applicable to current AI projects and developments.</li>
-              <li>Innovation Potential: Mastering deep learning allows you to contribute to groundbreaking advancements in artificial intelligence, shaping the future of technology and its applications.</li>
-              </ul>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>High Demand: Python Developers are in high demand across industries due to the exponential growth of AI Technology and the need for skilled individuals to manage and analyze it effectively.</li>
+                  <li>Lucrative Salaries: Careers through python offer competitive salaries and opportunities for advancement, reflecting the critical role these professionals can command High salaries for their skills.</li>
+                  <li>Diverse Opportunities: The skills learned from Python can be applicable in many roles like Python developer, AI Engineer/Developer, Machine Learning Engineer, Computer Vision Engineer, Data Scientist etc.,</li>
+                  <li>Versatility: Understanding these core technologies allows you to work collaboratively with real world projects.</li>
+                </ul>
               </div>
             </div>
 
@@ -268,13 +464,6 @@ const DeepLearning = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -370,23 +559,22 @@ const DeepLearning = () => {
             </div>
             <div className="space-y-4">
               {[
-                 {
-                    question: " What deep learning frameworks are covered in the course?",
-                    answer: "The course covers popular deep learning frameworks such as TensorFlow and PyTorch, providing hands-on experience in implementing neural networks and advanced algorithms."
-                  },
-                  {
-                    question: "How will hands-on projects help in understanding deep learning concepts?",
-                    answer: "Hands-on projects allow you to apply theoretical knowledge to practical scenarios, helping you grasp complex concepts and gain proficiency in developing and deploying deep learning models."
-                  },
-                  {
-                    question: "Are there any prerequisites for enrolling in the Deep Learning course?",
-                    answer: "Basic knowledge of Python programming and familiarity with machine learning concepts are recommended. A strong understanding of linear algebra and calculus is beneficial for understanding advanced algorithms."
-                  },
-                  
-                  {
-                    question: "What career paths can a Deep Learning certification lead to?",
-                    answer: "A Deep Learning certification qualifies you for roles such as deep learning engineer, AI researcher, machine learning engineer, and data scientist in industries ranging from healthcare and finance to autonomous vehicles and robotics."
-                  }
+                {
+                  question: "How does real project experience benefit learners?",
+                  answer: "Real project experience allows you to apply theoretical knowledge in practical scenarios, preparing you for challenges you will encounter in real-world development environments."
+                },
+                {
+                  question: "What are the prerequisites for enrolling in Python Programming?",
+                  answer: "Prerequisites generally include basic programming skills and dealing with projects."
+                },
+                {
+                  question: "How will hands-on experience benefit me in Python?",
+                  answer: "Hands-on experience with tools like Python allows you to apply theoretical knowledge to real-world scenarios, gaining practical skills crucial for solving real time challenges in industry."
+                },
+                {
+                  question: "How can Python certification boost my career prospects?",
+                  answer: "As one of the best-selling programming languages and the most widely used programming languages, Python will definitely recreate an important part in the destiny of technology. So having recognized Python certification demonstrates your proficiency."
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -476,4 +664,4 @@ const DeepLearning = () => {
   );
 };
 
-export default DeepLearning;
+export default Python;

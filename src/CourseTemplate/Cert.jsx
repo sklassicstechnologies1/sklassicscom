@@ -35,11 +35,11 @@ const Cert = () => {
               />
               
               {/* Optional overlay for interactive elements */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
                   <p className="text-sm">Certificate of Completion</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -194,9 +194,9 @@ const Cert = () => {
               <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg6})` }}>
               </div>
               <div className="p-6 bg-gray-50">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Natural Language Processing</h3>
-                <p className="text-gray-600 text-sm mb-3">2 Months</p>
-                <p className="text-red-600 font-bold text-xl">₹20,000</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Data Science</h3>
+                {/* <p className="text-gray-600 text-sm mb-3">2 Months</p> */}
+                <p className="text-red-600 font-bold text-xl">₹30,000</p>
               </div>
             </div>
 
@@ -216,9 +216,9 @@ const Cert = () => {
               <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg10})` }}>
               </div>
               <div className="p-6 bg-gray-50">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Tableau</h3>
-                <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Machine Learning</h3>
+                {/* <p className="text-gray-600 text-sm mb-3">45 Days</p> */}
+                <p className="text-red-600 font-bold text-xl">₹20,000</p>
               </div>
             </div>
 
@@ -228,7 +228,7 @@ const Cert = () => {
               </div>
               <div className="p-6 bg-gray-50">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Power BI</h3>
-                <p className="text-gray-600 text-sm mb-3">45 Days</p>
+                {/* <p className="text-gray-600 text-sm mb-3">45 Days</p> */}
                 <p className="text-red-600 font-bold text-xl">₹15,000</p>
               </div>
             </div>

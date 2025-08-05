@@ -1,6 +1,5 @@
 import React from "react";
-// import Cert from "./Cert";
-import courseimg14 from "../assets/courseimg14.jpg";
+import courseimg18 from "../assets/courseimg18.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,38 +7,28 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const DeepLearning = () => {
+const HtmlCssJs = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg14})` }}
+        style={{ backgroundImage: `url(${courseimg18})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Deep Learning</h1>
+          <h1 className="text-5xl font-extrabold mb-10">HTML CSS & JAVASCRIPT</h1>
 
           <ul className="space-y-4 text-lg leading-relaxed">
-
-<li>Learn from AI professionals.</li>
-
-<li>Earn a deep learning certification.</li>
-
-<li>Work on hands-on projects.</li>
-
-<li>Master TensorFlow, PyTorch, and advanced algorithms.</li>
+            <li>Start your web development journey.</li>
+            <li>Create interactive websites.</li>
+            <li>Hands-on projects included.</li>
+            <li>Technologies: HTML, CSS, JavaScript.</li>
           </ul>
-          {/* <h3>
-            <strong>
-           Course Duration : 45 days
-            </strong>
-          </h3> */}
-          
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹20,000
+            Buy for ₹10,000
           </button>
         </div>
       </section>
@@ -53,15 +42,13 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-              Advance your expertise with our Deep Learning course, designed for those looking to dive deep into the complexities of neural networks, machine learning, and artificial intelligence. This course covers foundational concepts and advanced techniques, including convolutional and recurrent neural networks, TensorFlow, and Keras. You’ll gain hands-on experience through projects that apply deep learning to real-world problems.
+                Jumpstart your web development career with our comprehensive course on HTML, CSS, and JavaScript. This program is designed to teach you the building blocks of the web, enabling you to create and style interactive websites from scratch. You'll learn HTML for structure, CSS for styling, and JavaScript for functionality, culminating in the ability to develop fully responsive and dynamic web applications.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-               
-               
-                <li> Cutting-Edge Content: Study the latest in deep learning advancements.</li>
-                <li>Project-Driven Learning**: Implement deep learning models in various sectors.</li>
-                <li>Expert Mentorship: Guidance from professionals with deep industry experience.</li>
+                <li>Foundational Skills: Master the core technologies used for front-end development.</li>
+                <li>Interactive Projects: Build and deploy interactive websites and applications.</li>
+                <li>Real-World Application: Learn best practices and modern development workflows.</li>
               </ul>
             </div>
 
@@ -69,11 +56,10 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-
-<li>Data scientists and machine learning engineers looking to specialize in deep learning.</li>
-<li>Students with a background in computer science or related fields.</li>
-<li>Professionals in tech seeking to enhance their AI capabilities.</li>
-
+                <li>Beginners interested in starting a career in web development.</li>
+                <li>Designers looking to add coding to their skillset.</li>
+                <li>Anyone with an interest in creating and managing their own websites.</li>
+                <li>Professionals seeking to understand web technology for better project oversight.</li>
               </ul>
             </div>
 
@@ -82,17 +68,17 @@ const DeepLearning = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
                 {[
-                  "Fundamentals Of Deep Learning",
-                  "Artificial Neural Networks (Ann)",
-                  "Convolutional Neural Networks (CNN)",
-                  "Recurrent Neural Networks (RNN)",
-                  "Regional Convolutional Neural Networks (R-CNN)",
-                  "Representation Learning And Generative Adversarial Networks (GAN)",
-                  "Deep Learning Architectures",
-                  "Deep Learning Applications For Reinforcement Learning And Nlp",
-                  "Projects",
+                  "INTRODUCTION TO HTML",
+                  "INTRODUCTION TO CSS",
+                  "BOX Model AND POSITIONING",
+                  "RESPONSIVE DESIGN",
+                  "INTRODUCTION TO JAVASCRIPT",
+                  "DOM",
+                  "BOOTSTRAP",
+                  "GIT",
+                  "PROJECTS"
                 ].map((item, index) => {
-                  if (item === "Fundamentals Of Computer Vision") {
+                  if (item === "INTRODUCTION TO HTML") {
                     return (
                       <details
                         key={index}
@@ -105,17 +91,42 @@ const DeepLearning = () => {
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Introduction to Computer Vision</li>
-                            <li>Digital Image Fundamentals</li>
-                            <li>Image Representation and Formats</li>
-                            <li>Color Spaces and Models</li>
-                            <li>Basic Image Operations</li>
-                            <li>Image Quality and Enhancement</li>
+                            <div className="font-bold text-black">HTML Fundamentals</div>
+                            <li>Basic Structure of a Web Page</li>
+                            <li>HTML Head Tags</li>
+                            <li>HTML Body Tag</li>
+                            <li>HTML Paragraph Spacing</li>
+                            <li>HTML Line Breaks</li>
+                            <li>HTML Non-Breaking Space</li>
+                            <li>HTML Header Tags</li>
+                            <li>HTML Inline Text Formatting</li>
+                            <li>HTML Unordered Lists</li>
+                            <li>HTML Ordered Lists</li>
+                            <li>HTML Image Insertion</li>
+                            <li>HTML Embedding Videos</li>
+                            <li>HTML Absolute vs. Relative File Referencing</li>
+                            <li>HTML Link Creation</li>
+                            <li>HTML Anchor Tags</li>
+                            <li>HTML Tables</li>
+                            <li>HTML Nested Tables</li>
+                            <li>HTML Merging Cells</li>
+                            <li>HTML Text Wrapping</li>
+                            <li>HTML Table Background Image</li>
+                            <li>HTML Table Cell Alignment</li>
+                            <li>HTML – Introduction to Forms</li>
+                            <li>HTML Form Tags and Attributes</li>
+                            <li>HTML Forms – Post vs. Get</li>
+                            <li>HTML Forms – Input Text Fields</li>
+                            <li>HTML Forms – Select Menus</li>
+                            <li>HTML Forms – Check Boxes and Radio Buttons</li>
+                            <li>HTML Forms – Text Areas and Buttons</li>
+                            <li>HTML Iframes</li>
+                            <li>HTML Project – Introduction</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Image Processing Techniques") {
+                  } else if (item === "INTRODUCTION TO CSS") {
                     return (
                       <details
                         key={index}
@@ -128,17 +139,22 @@ const DeepLearning = () => {
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Filtering and Convolution</li>
-                            <li>Morphological Operations</li>
-                            <li>Edge Detection Algorithms</li>
-                            <li>Image Segmentation</li>
-                            <li>Noise Reduction Techniques</li>
-                            <li>Image Transformation</li>
+                            <div className="font-bold text-black">CSS Basics</div>
+                            <li>Section Intro</li>
+                            <li>Implementing CSS</li>
+                            <li>Basic CSS Selectors</li>
+                            <li>Fonts In CSS</li>
+                            <li>Font & Text Properties</li>
+                            <li>Colours (Color Names, HEX, RGB, HSL)</li>
+                            <li>CSS Specificity</li>
+                            <li>Backgrounds</li>
+                            <li>Styling Links</li>
+                            <li>Font Awesome Library</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Feature Detection And Description") {
+                  } else if (item === "BOX Model AND POSITIONING") {
                     return (
                       <details
                         key={index}
@@ -151,17 +167,24 @@ const DeepLearning = () => {
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Corner Detection (Harris, Shi-Tomasi)</li>
-                            <li>Scale-Invariant Feature Transform (SIFT)</li>
-                            <li>Speeded Up Robust Features (SURF)</li>
-                            <li>ORB (Oriented FAST and Rotated BRIEF)</li>
-                            <li>Feature Matching Algorithms</li>
-                            <li>Feature Descriptors</li>
+                            <div className="font-bold text-black">Layout Techniques</div>
+                            <li>Sizing & Overflow</li>
+                            <li>Padding</li>
+                            <li>Margin</li>
+                            <li>Universal Selector & Reset</li>
+                            <li>Borders</li>
+                            <li>Display Property</li>
+                            <li>Position Property</li>
+                            <li>Box Shadow</li>
+                            <li>What Is Flexbox?</li>
+                            <li>Flexbox Basics – Containers & Items</li>
+                            <li>Align & Justify Items</li>
+                            <li>Flex Properties & Dynamic Sizing</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Object Detection And Recognition") {
+                  } else if (item === "RESPONSIVE DESIGN") {
                     return (
                       <details
                         key={index}
@@ -174,12 +197,138 @@ const DeepLearning = () => {
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Template Matching</li>
-                            <li>Haar Cascades</li>
-                            <li>HOG (Histogram of Oriented Gradients)</li>
-                            <li>Face Detection and Recognition</li>
-                            <li>Object Classification</li>
-                            <li>Multi-object Detection</li>
+                            <div className="font-bold text-black">Responsive Web Design</div>
+                            <li>What Is Responsive Design?</li>
+                            <li>Flexible Layouts & Percentages</li>
+                            <li>rem & em Units</li>
+                            <li>Viewport Units (vh & vw)</li>
+                            <li>Media Queries</li>
+                            <li>Responsive Pricing Grid</li>
+                            <li>Responsive Flexbox Layout</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "INTRODUCTION TO JAVASCRIPT") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <ul className="list-disc list-inside space-y-1">
+                            <div className="font-bold text-black">JavaScript Basics</div>
+                            <li>Introduction to JavaScript</li>
+                            <li>JavaScript Alerts – Adding Behaviour to Websites</li>
+                            <li>Data Types</li>
+                            <li>JavaScript Variables</li>
+                            <li>Naming and Naming Conventions for JavaScript Variables</li>
+                            <li>String Concatenation</li>
+                            <li>String Lengths and Retrieving the Number of Characters</li>
+                            <li>Slicing and Extracting Parts of a String</li>
+                            <li>Basic Arithmetic and the Modulo Operator in JavaScript</li>
+                            <li>Increment and Decrement Expressions</li>
+                            <li>Functions Part 1: Creating and Calling Functions</li>
+                            <li>Functions Part 2: Parameters and Arguments</li>
+                            <li>Functions Part 3: Outputs & Return Values</li>
+                            <li>Control Statements: Using If-Else Conditionals & Logic</li>
+                            <li>Comparators and Equality</li>
+                            <li>Combining Comparators</li>
+                            <li>Collections: Working with JavaScript Arrays</li>
+                            <li>Adding Elements and Intermediate Array Techniques</li>
+                            <li>Control Statements: While Loops</li>
+                            <li>Control Statements: For Loops</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "DOM") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <ul className="list-disc list-inside space-y-1">
+                            <div className="font-bold text-black">Document Object Model</div>
+                            <li>Adding JavaScript to Websites</li>
+                            <li>Introduction to the Document Object Model (DOM)</li>
+                            <li>Solution to the DOM Challenge</li>
+                            <li>Selecting HTML Elements with JavaScript</li>
+                            <li>Manipulating and Changing Styles of HTML Elements with JavaScript</li>
+                            <li>Text Manipulation and the Text Content Property</li>
+                            <li>Manipulating HTML Element Attributes</li>
+                            <li>Project – Introduction</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "BOOTSTRAP") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <ul className="list-disc list-inside space-y-1">
+                            <div className="font-bold text-black">Bootstrap Framework</div>
+                            <li>What is Bootstrap?</li>
+                            <li>Bootstrap Layout</li>
+                            <li>Bootstrap Components</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "GIT") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <ul className="list-disc list-inside space-y-1">
+                            <div className="font-bold text-black">Version Control</div>
+                            <li>Git, Git Hub And Version Control</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "PROJECTS") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <ul className="list-disc list-inside space-y-1">
+                            <div className="font-bold text-black">Practical Applications</div>
+                            <li>Mini Project</li>
+                            <li>Advanced Project</li>
                           </ul>
                         </div>
                       </details>
@@ -244,19 +393,18 @@ const DeepLearning = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-              Why Pursue the Deep Learning Course?
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 tracking-wide">
+                Why Pursue the HTML, CSS, JavaScript Course?
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <ul className="list-disc list-inside space-y-2">
-              
-              <li>Cutting-Edge Technology: Deep learning is at the forefront of artificial intelligence, driving innovations in areas such as image and speech recognition, autonomous systems, and more.</li>
-              <li>Career Growth: The demand for deep learning expertise is rapidly growing across industries, offering lucrative career opportunities in AI research, data science, and machine learning engineering.</li>
-              <li>Hands-On Learning: Gain practical experience by working on projects that simulate real-world applications, enhancing your ability to deploy deep learning models effectively.</li>
-              <li>Industry Relevance: Deep learning frameworks like TensorFlow and PyTorch are widely adopted in industry, ensuring that skills acquired are directly applicable to current AI projects and developments.</li>
-              <li>Innovation Potential: Mastering deep learning allows you to contribute to groundbreaking advancements in artificial intelligence, shaping the future of technology and its applications.</li>
-              </ul>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>Fundamental Knowledge:</strong> Mastering HTML, CSS, and JavaScript forms the foundation of modern web development, essential for creating engaging and functional websites.</li>
+                  <li><strong>Career Opportunities:</strong> Web developers skilled in HTML, CSS, and JavaScript are in demand across industries, offering diverse job opportunities and career growth potential.</li>
+                  <li><strong>Hands-On Learning:</strong> Through interactive projects, gain practical experience in building responsive and interactive websites, preparing you for real-world web development challenges.</li>
+                  <li><strong>Versatility:</strong> Understanding these core technologies allows you to work collaboratively with designers and backend developers, contributing to full-stack development projects.</li>
+                  <li><strong>Empowerment:</strong> Acquire the skills to create and manage your own websites, empowering you to bring your ideas to life and enhance your digital presence effectively.</li>
+                </ul>
               </div>
             </div>
 
@@ -268,13 +416,6 @@ const DeepLearning = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -370,23 +511,22 @@ const DeepLearning = () => {
             </div>
             <div className="space-y-4">
               {[
-                 {
-                    question: " What deep learning frameworks are covered in the course?",
-                    answer: "The course covers popular deep learning frameworks such as TensorFlow and PyTorch, providing hands-on experience in implementing neural networks and advanced algorithms."
-                  },
-                  {
-                    question: "How will hands-on projects help in understanding deep learning concepts?",
-                    answer: "Hands-on projects allow you to apply theoretical knowledge to practical scenarios, helping you grasp complex concepts and gain proficiency in developing and deploying deep learning models."
-                  },
-                  {
-                    question: "Are there any prerequisites for enrolling in the Deep Learning course?",
-                    answer: "Basic knowledge of Python programming and familiarity with machine learning concepts are recommended. A strong understanding of linear algebra and calculus is beneficial for understanding advanced algorithms."
-                  },
-                  
-                  {
-                    question: "What career paths can a Deep Learning certification lead to?",
-                    answer: "A Deep Learning certification qualifies you for roles such as deep learning engineer, AI researcher, machine learning engineer, and data scientist in industries ranging from healthcare and finance to autonomous vehicles and robotics."
-                  }
+                {
+                  question: "What can I expect to learn in the HTML, CSS, JavaScript course?",
+                  answer: "You will learn HTML for creating content structure, CSS for styling and layout design, and JavaScript for adding interactivity and functionality to websites."
+                },
+                {
+                  question: "How will building interactive projects benefit me?",
+                  answer: "Building interactive projects allows you to apply theoretical knowledge to practical applications, improving your understanding of web development concepts and techniques."
+                },
+                {
+                  question: "Do I need any prior coding experience to enroll in this course?",
+                  answer: "No prior coding experience is required. The course is designed for beginners who are eager to learn web development from scratch."
+                },
+                {
+                  question: "What career paths can proficiency in HTML, CSS, and JavaScript lead to?",
+                  answer: "Proficiency in HTML, CSS, and JavaScript qualifies you for roles such as front-end developer, web designer, UI/UX developer, and positions involving web content creation and management across various industries."
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -476,4 +616,4 @@ const DeepLearning = () => {
   );
 };
 
-export default DeepLearning;
+export default HtmlCssJs;

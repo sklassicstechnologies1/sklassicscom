@@ -1,6 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import courseimg21 from "../assets/courseimg21.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,154 +7,24 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const PowerBi = () => {
-  // Curriculum component with animations
-  const Curriculum = () => {
-    const [openIndex, setOpenIndex] = useState(null);
-
-    const modules = [
-      {
-        title: "Power BI Desktop Fundamentals",
-        content: [
-          "Power BI Desktop Interface",
-          "Data Sources and Connections",
-          "Basic Data Import",
-          "Report View and Design",
-          "Basic Visualizations",
-          "Report Publishing",
-        ],
-      },
-      {
-        title: "Data Import and Transformation",
-        content: [
-          "Connecting to Various Data Sources",
-          "Data Cleaning and Transformation",
-          "Merging and Appending Queries",
-          "Data Type Conversions",
-          "Error Handling",
-          "Query Folding",
-        ],
-      },
-      {
-        title: "Data Modeling and Relationships",
-        content: [
-          "Star Schema Design",
-          "Creating Relationships",
-          "Cardinality Settings",
-          "Date Tables and Hierarchies",
-          "Role-Playing Dimensions",
-          "Bridge Tables",
-        ],
-      },
-      {
-        title: "DAX (Data Analysis Expressions)",
-        content: [
-          "Calculated Columns vs Measures",
-          "Basic DAX Functions",
-          "Filter Context and Row Context",
-          "Time Intelligence Functions",
-          "CALCULATE Function",
-          "Advanced DAX Patterns",
-        ],
-      },
-      { title: "Visualization Best Practices", content: [] },
-      { title: "Advanced Charts and Custom Visuals", content: [] },
-      { title: "Dashboard Design Principles", content: [] },
-      { title: "Power BI Service and Collaboration", content: [] },
-      { title: "Data Refresh and Scheduling", content: [] },
-      { title: "Performance Optimization", content: [] },
-      { title: "Real-world Projects", content: [] },
-    ];
-
-    return (
-      <div>
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-          Curriculum
-        </h2>
-        <div className="space-y-3">
-          {modules.map((mod, index) => (
-            <div
-              key={index}
-              className="border border-purple-800 rounded overflow-hidden"
-            >
-              <button
-                onClick={() =>
-                  setOpenIndex(openIndex === index ? null : index)
-                }
-                className="bg-purple-900 w-full text-white px-4 py-3 flex justify-between items-center"
-              >
-                <span>{mod.title}</span>
-                <span className="text-xl font-bold">
-                  {openIndex === index ? "-" : "+"}
-                </span>
-              </button>
-
-              <AnimatePresence initial={false}>
-                {openIndex === index && (
-                  <motion.div
-                    key="content"
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="bg-white px-4 overflow-hidden"
-                  >
-                    {mod.content.length > 0 ? (
-                      <motion.ul
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                          visible: {
-                            transition: { staggerChildren: 0.05 },
-                          },
-                        }}
-                        className="list-disc list-inside py-3 space-y-1 text-gray-800 text-sm"
-                      >
-                        {mod.content.map((item, idx) => (
-                          <motion.li
-                            key={idx}
-                            variants={{
-                              hidden: { opacity: 0, x: -10 },
-                              visible: { opacity: 1, x: 0 },
-                            }}
-                            transition={{ duration: 0.3 }}
-                          >
-                            {item}
-                          </motion.li>
-                        ))}
-                      </motion.ul>
-                    ) : (
-                      <div className="py-3 text-gray-700 text-sm">
-                        Module details coming soon.
-                      </div>
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
-
+const Java = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg9})` }}
+        style={{ backgroundImage: `url(${courseimg21})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Power BI</h1>
+          <h1 className="text-5xl font-extrabold mb-10">Java Programming</h1>
 
           <ul className="space-y-4 text-lg leading-relaxed">
-         <li>Learn from industry experts.</li> 
-<li>Earn a recognized certification.</li>
-<li>Work on real-world projects.</li>
-            <li>Master Power BI Desktop, DAX, and Power Query.</li>
+            <li>Master Java Programming</li>
+            <li>Build real-world projects</li>
+            <li>Learn with industry standards</li>
+            <li>Learn Java from Basics to Advanced Topics</li>
           </ul>
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
@@ -173,13 +42,13 @@ const PowerBi = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-                Dive deep into the world of business intelligence with this comprehensive Power BI course designed to empower you with the skills to create, share, and benefit from insightful data visualizations and reports. This course covers data modeling, visual analytics, report generation, and the use of Power BI service and desktop applications.
+                Start your developer career by selecting our Java Course. Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications today. Learn our Java course from industrial experts with hands-on Experience.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-                <li>One-on-One with Industry</li>
-                <li>Expert Guidance</li>
-                <li>1:1 Mock Interview</li>
+                <li>Hands-On Experience: Gain practical skills with coding real world scenarios.</li>
+                <li>Real Projects: Dealing with many real time Projects learning with Industrial Experts from scratch.</li>
+                <li>Industry Standards: Learn best practices in coding.</li>
               </ul>
             </div>
 
@@ -187,17 +56,42 @@ const PowerBi = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-                <li>Business analysts looking to enhance their data visualization skills</li>
-                <li>Data professionals wanting to master Power BI for reporting</li>
-                <li>IT professionals seeking to transition into business intelligence roles</li>
-                <li>Managers and executives who need to create data-driven presentations</li>
-                <li>Students and freshers interested in business analytics and data visualization</li>
-                <li>Anyone wanting to learn Microsoft's leading BI tool</li>
+                <li>Aspiring freshers interested in Developer role.</li>
+                <li>Professionals in IT and related fields seeking to enhance their programming skills.</li>
+                <li>Students and hobbyists looking to build professional-grade applications.</li>
               </ul>
             </div>
 
-            {/* Animated Curriculum Section */}
-            <Curriculum />
+            {/* Curriculum Section */}
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
+              <div className="space-y-3">
+                {[
+                  "Java Programming",
+                //   "Object-Oriented Programming",
+                //   "Java Collections Framework",
+                //   "Exception Handling",
+                //   "Multithreading",
+                //   "JDBC and Database Connectivity",
+                //   "Java 8 Features",
+                //   "Building Real-World Applications"
+                ].map((item, index) => (
+                  <details
+                    key={index}
+                    className="group border border-purple-800 rounded overflow-hidden"
+                  >
+                    <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <span>{item}</span>
+                      <span className="text-xl font-bold group-open:hidden">+</span>
+                      <span className="text-xl font-bold hidden group-open:block">-</span>
+                    </summary>
+                    <div className="bg-white px-4 py-3 text-gray-800 text-sm">
+                      <p>soon content will be updated</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Right Side: Corporate Training Card */}
@@ -238,14 +132,17 @@ const PowerBi = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-                Master Power BI for Business Intelligence and Data Visualization
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 Lowercase tracking-wide">
+                Why Pursue the Java Programming Language?
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-                <p>
-                  Power BI is the leading business intelligence tool that transforms raw data into actionable insights. This course equips you with skills to create compelling dashboards, perform advanced data analysis, and drive data-driven decision making in organizations. With Power BI expertise, you can unlock career opportunities in business intelligence, data analysis, and consulting roles.
-                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Versatility: Learning Java Programming makes you versatile and capable of handling various aspects of coding.</li>
+                  <li>Hands-On Experience: The course emphasizes real-time project analysis.</li>
+                  <li>Career Opportunities: By Mastering Java course there are a number of opportunities like web developer, Junior Java Developer, Mobile Developer, Front-end Developer, Java developer and many more.</li>
+                  <li>Diverse Applications: Java is applicable across the web in Mobile apps, Big data technologies, web applications, Software development Game development and many more.</li>
+                </ul>
               </div>
             </div>
 
@@ -257,13 +154,6 @@ const PowerBi = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -360,13 +250,21 @@ const PowerBi = () => {
             <div className="space-y-4">
               {[
                 {
-                  question: "What specific tools and techniques will I master in the Power BI course?",
-                  answer: "Skills in using Power BI Desktop, DAX language for dynamic calculations, and Power Query for data transformation."
+                  question: "How does real project experience benefit learners?",
+                  answer: "Real project experience allows you to apply theoretical knowledge in practical scenarios, preparing you for challenges you will encounter in real-world development environments."
                 },
                 {
-                  question: "What is the importance of data visualization in business intelligence?",
-                  answer: "Crucial for interpreting complex datasets and communicating findings effectively to stakeholders."
+                  question: "What are the key concepts covered in Java course?",
+                  answer: "Our Java Programming typically covers concepts from Basics to Advanced Topics including OOP, Collections, Multithreading, JDBC, and modern Java features."
                 },
+                {
+                  question: "What are the prerequisites for enrolling in Java Programming?",
+                  answer: "Prerequisites generally include basic programming skills and dealing with projects. No prior Java knowledge is required as we start from fundamentals."
+                },
+                {
+                  question: "How can Java certification boost my career prospects?",
+                  answer: "Java certification can significantly enhance your job prospects by validating your expertise and demonstrating your commitment to the field. Certified Java developers often command higher salaries and better positions."
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -405,47 +303,59 @@ const PowerBi = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Course 1: Natural Language Processing */}
+              {/* Course 1: Python */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg6})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Natural Language Processing</h3>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Python</h3>
                   <p className="text-gray-600 text-sm mb-3">2 Months</p>
-                  <p className="text-red-600 font-bold text-xl">₹20,000</p>
+                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹15,000
+                  </button>
                 </div>
               </div>
 
-              {/* Course 2: Big Data Analytics */}
+              {/* Course 2: Html Css & Js */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg8})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Big Data Analytics</h3>
-                  <p className="text-gray-600 text-sm mb-3">3 Months</p>
-                  <p className="text-red-600 font-bold text-xl">₹30,000</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Html Css & Js</h3>
+                  <p className="text-gray-600 text-sm mb-3">2 Months</p>
+                  <p className="text-red-600 font-bold text-xl">₹10,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹10,000
+                  </button>
                 </div>
               </div>
 
-              {/* Course 3: Tableau */}
+              {/* Course 3: Python Full Stack */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg10})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Tableau</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Python Full Stack</h3>
+                  <p className="text-gray-600 text-sm mb-3">3 Months</p>
+                  <p className="text-red-600 font-bold text-xl">₹30,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹30,000
+                  </button>
                 </div>
               </div>
 
-              {/* Course 4: Power BI */}
+              {/* Course 4: Java Full Stack */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg9})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Power BI</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Java Full Stack</h3>
+                  <p className="text-gray-600 text-sm mb-3">3 Months</p>
+                  <p className="text-red-600 font-bold text-xl">₹30,000</p>
+                  <button className="mt-4 w-full bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded-md shadow-md hover:bg-yellow-300 transition-all">
+                    Buy for ₹30,000
+                  </button>
                 </div>
               </div>
             </div>
@@ -456,4 +366,4 @@ const PowerBi = () => {
   );
 };
 
-export default PowerBi;
+export default Java;

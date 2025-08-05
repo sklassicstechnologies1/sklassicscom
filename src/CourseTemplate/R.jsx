@@ -1,6 +1,5 @@
 import React from "react";
-// import Cert from "./Cert";
-import courseimg14 from "../assets/courseimg14.jpg";
+import courseimg22 from "../assets/courseimg22.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,38 +7,28 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const DeepLearning = () => {
+const R = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg14})` }}
+        style={{ backgroundImage: `url(${courseimg22})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Deep Learning</h1>
+          <h1 className="text-5xl font-extrabold mb-10">R PROGRAMMING</h1>
 
           <ul className="space-y-4 text-lg leading-relaxed">
-
-<li>Learn from AI professionals.</li>
-
-<li>Earn a deep learning certification.</li>
-
-<li>Work on hands-on projects.</li>
-
-<li>Master TensorFlow, PyTorch, and advanced algorithms.</li>
+            <li>Master R Programming</li>
+            <li>Build real-world projects</li>
+            <li>Learn with industry standards</li>
+            <li>Learn R Language from Basics to Advanced Topics like Plotting Graphs, Spatial Analysis and Visualization Concepts</li>
           </ul>
-          {/* <h3>
-            <strong>
-           Course Duration : 45 days
-            </strong>
-          </h3> */}
-          
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹20,000
+            Buy for ₹15,000
           </button>
         </div>
       </section>
@@ -53,15 +42,13 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-              Advance your expertise with our Deep Learning course, designed for those looking to dive deep into the complexities of neural networks, machine learning, and artificial intelligence. This course covers foundational concepts and advanced techniques, including convolutional and recurrent neural networks, TensorFlow, and Keras. You’ll gain hands-on experience through projects that apply deep learning to real-world problems.
+                In this Technology and data-driven world, data analysts are changing the face of Business Intelligence. R Programming language is the primary choice for Professionals who are engaged in data analysis as it offers several Benefits. Our R Programming is designed to turn beginners into skilled R Programmers by dealing with many real time Projects learning from Industrial Experts.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-               
-               
-                <li> Cutting-Edge Content: Study the latest in deep learning advancements.</li>
-                <li>Project-Driven Learning**: Implement deep learning models in various sectors.</li>
-                <li>Expert Mentorship: Guidance from professionals with deep industry experience.</li>
+                <li>Hands-On Experience: Gain practical skills with Plotting Graphs, Spatial Analysis and Visualization Concepts.</li>
+                <li>Real Projects: Dealing with many real time Projects learning from Industrial Experts from scratch.</li>
+                <li>Industry Standards: Learn best practices in coding, debugging, analysis and visualization.</li>
               </ul>
             </div>
 
@@ -69,11 +56,10 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-
-<li>Data scientists and machine learning engineers looking to specialize in deep learning.</li>
-<li>Students with a background in computer science or related fields.</li>
-<li>Professionals in tech seeking to enhance their AI capabilities.</li>
-
+                <li>Aspiring data scientists and analysts</li>
+                <li>Professionals looking to enhance their data analysis skills</li>
+                <li>Students interested in statistical computing and graphics</li>
+                <li>Researchers working with large datasets</li>
               </ul>
             </div>
 
@@ -82,21 +68,16 @@ const DeepLearning = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
                 {[
-                  "Fundamentals Of Deep Learning",
-                  "Artificial Neural Networks (Ann)",
-                  "Convolutional Neural Networks (CNN)",
-                  "Recurrent Neural Networks (RNN)",
-                  "Regional Convolutional Neural Networks (R-CNN)",
-                  "Representation Learning And Generative Adversarial Networks (GAN)",
-                  "Deep Learning Architectures",
-                  "Deep Learning Applications For Reinforcement Learning And Nlp",
-                  "Projects",
+                  "R Language Fundamentals",
+                  "Data Visualization in R",
+                  "Projects"
                 ].map((item, index) => {
-                  if (item === "Fundamentals Of Computer Vision") {
+                  if (item === "R Language Fundamentals") {
                     return (
                       <details
                         key={index}
                         className="group border border-purple-800 rounded overflow-hidden"
+                        
                       >
                         <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
@@ -104,18 +85,31 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Core R Concepts</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Introduction to Computer Vision</li>
-                            <li>Digital Image Fundamentals</li>
-                            <li>Image Representation and Formats</li>
-                            <li>Color Spaces and Models</li>
-                            <li>Basic Image Operations</li>
-                            <li>Image Quality and Enhancement</li>
+                            <li>R Basics and Syntax</li>
+                            <li>Numbers and Attributes</li>
+                            <li>Creating and Manipulating Vectors</li>
+                            <li>Mixing Objects and Explicit Coercion</li>
+                            <li>Formatting Data Values</li>
+                            <li>Matrices, Lists, Factors, and Data Frames</li>
+                            <li>Handling Missing Values</li>
+                            <li>Reading and Writing Data</li>
+                            <li>Using Dput/Ddump</li>
+                            <li>Interface to the Outside World</li>
+                            <li>Subsetting R Objects</li>
+                            <li>Vectorized Operations</li>
+                            <li>Dates and Times</li>
+                            <li>Managing Data Frames with the Dplyr Package</li>
+                            <li>Control Structures</li>
+                            <li>Functions and Scoping</li>
+                            <li>Debugging Techniques</li>
+                            
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Image Processing Techniques") {
+                  } else if (item === "Data Visualization in R") {
                     return (
                       <details
                         key={index}
@@ -127,18 +121,23 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Visualization Techniques</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Filtering and Convolution</li>
-                            <li>Morphological Operations</li>
-                            <li>Edge Detection Algorithms</li>
-                            <li>Image Segmentation</li>
-                            <li>Noise Reduction Techniques</li>
-                            <li>Image Transformation</li>
+                            <li>Storytelling With Data</li>
+                            <li>Principle Tenets of Data Visualization</li>
+                            <li>Elements of Data Visualization</li>
+                            <li>Infographics Vs Data Visualization</li>
+                            <li>Graphical Functions in R</li>
+                            <li>Plotting Graphs and Charts</li>
+                            <li>Customizing Graphical Parameters</li>
+                            <li>Various GUIs for Visualization</li>
+                            <li>Spatial Analysis Techniques</li>
+                            <li>Advanced Visualization Concepts</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Feature Detection And Description") {
+                  } else if (item === "Projects") {
                     return (
                       <details
                         key={index}
@@ -150,36 +149,14 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Practical Applications</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Corner Detection (Harris, Shi-Tomasi)</li>
-                            <li>Scale-Invariant Feature Transform (SIFT)</li>
-                            <li>Speeded Up Robust Features (SURF)</li>
-                            <li>ORB (Oriented FAST and Rotated BRIEF)</li>
-                            <li>Feature Matching Algorithms</li>
-                            <li>Feature Descriptors</li>
-                          </ul>
-                        </div>
-                      </details>
-                    );
-                  } else if (item === "Object Detection And Recognition") {
-                    return (
-                      <details
-                        key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
-                      >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                          <span>{item}</span>
-                          <span className="text-xl font-bold group-open:hidden">+</span>
-                          <span className="text-xl font-bold hidden group-open:block">-</span>
-                        </summary>
-                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                          <ul className="list-disc list-inside space-y-1">
-                            <li>Template Matching</li>
-                            <li>Haar Cascades</li>
-                            <li>HOG (Histogram of Oriented Gradients)</li>
-                            <li>Face Detection and Recognition</li>
-                            <li>Object Classification</li>
-                            <li>Multi-object Detection</li>
+                            <li>Hands On Experience With Real Datasets</li>
+                            <li>End To End Unique Projects</li>
+                            <li>Data Cleaning and Preparation</li>
+                            <li>Exploratory Data Analysis</li>
+                            <li>Statistical Modeling Projects</li>
+                            <li>Interactive Dashboard Development</li>
                           </ul>
                         </div>
                       </details>
@@ -244,19 +221,17 @@ const DeepLearning = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-              Why Pursue the Deep Learning Course?
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 Lowercase tracking-wide">
+                Why Pursue the R Programming Language?
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <ul className="list-disc list-inside space-y-2">
-              
-              <li>Cutting-Edge Technology: Deep learning is at the forefront of artificial intelligence, driving innovations in areas such as image and speech recognition, autonomous systems, and more.</li>
-              <li>Career Growth: The demand for deep learning expertise is rapidly growing across industries, offering lucrative career opportunities in AI research, data science, and machine learning engineering.</li>
-              <li>Hands-On Learning: Gain practical experience by working on projects that simulate real-world applications, enhancing your ability to deploy deep learning models effectively.</li>
-              <li>Industry Relevance: Deep learning frameworks like TensorFlow and PyTorch are widely adopted in industry, ensuring that skills acquired are directly applicable to current AI projects and developments.</li>
-              <li>Innovation Potential: Mastering deep learning allows you to contribute to groundbreaking advancements in artificial intelligence, shaping the future of technology and its applications.</li>
-              </ul>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Versatility: Learning R Programming language makes you versatile and capable of handling various aspects of Data Science.</li>
+                  <li>Hands-On Experience: The course emphasizes real project analysis and visualization.</li>
+                  <li>Career Opportunities: Vast Opportunities are Knocking door from learning of R Programming Language to build a better career like Data Scientist, Data Analyst, Business Analyst and many more.</li>
+                  <li>Industry Relevance: Mastering R Programming Language equips you with skills aligned with industry standards, ensuring you are prepared for current and future demands in visual data analysis.</li>
+                </ul>
               </div>
             </div>
 
@@ -268,13 +243,6 @@ const DeepLearning = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -370,23 +338,22 @@ const DeepLearning = () => {
             </div>
             <div className="space-y-4">
               {[
-                 {
-                    question: " What deep learning frameworks are covered in the course?",
-                    answer: "The course covers popular deep learning frameworks such as TensorFlow and PyTorch, providing hands-on experience in implementing neural networks and advanced algorithms."
-                  },
-                  {
-                    question: "How will hands-on projects help in understanding deep learning concepts?",
-                    answer: "Hands-on projects allow you to apply theoretical knowledge to practical scenarios, helping you grasp complex concepts and gain proficiency in developing and deploying deep learning models."
-                  },
-                  {
-                    question: "Are there any prerequisites for enrolling in the Deep Learning course?",
-                    answer: "Basic knowledge of Python programming and familiarity with machine learning concepts are recommended. A strong understanding of linear algebra and calculus is beneficial for understanding advanced algorithms."
-                  },
-                  
-                  {
-                    question: "What career paths can a Deep Learning certification lead to?",
-                    answer: "A Deep Learning certification qualifies you for roles such as deep learning engineer, AI researcher, machine learning engineer, and data scientist in industries ranging from healthcare and finance to autonomous vehicles and robotics."
-                  }
+                {
+                  question: "How does real project experience benefit learners?",
+                  answer: "Real project experience allows you to apply theoretical knowledge in practical scenarios, preparing you for challenges you will encounter in real-world development environments."
+                },
+                {
+                  question: "What are the key concepts covered in R Programming Language?",
+                  answer: "Our R Programming typically covers concepts from Basics to Advanced Topics like Plotting Graphs, Spatial Analysis and Visualization Concepts."
+                },
+                {
+                  question: "What are the prerequisites for enrolling in R Programming?",
+                  answer: "Prerequisites generally include basic programming skills, and a strong interest in working with large datasets and data analysis."
+                },
+                {
+                  question: "How can R Programming certification boost my career prospects?",
+                  answer: "R Programming language is the primary choice for Professionals who are engaged in data analysis as it offers several Benefits. So certifying R Programming Language will be helpful to build a better career like Data Scientist, Data Analyst, Business Analyst and many more."
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -425,12 +392,12 @@ const DeepLearning = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Course 1: Natural Language Processing */}
+              {/* Course 1: Business Analytics */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg6})` }}>
                 </div>
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Natural Language Processing</h3>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Business Analytics</h3>
                   <p className="text-gray-600 text-sm mb-3">2 Months</p>
                   <p className="text-red-600 font-bold text-xl">₹20,000</p>
                 </div>
@@ -476,4 +443,4 @@ const DeepLearning = () => {
   );
 };
 
-export default DeepLearning;
+export default R;

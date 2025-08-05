@@ -1,6 +1,5 @@
 import React from "react";
-// import Cert from "./Cert";
-import courseimg14 from "../assets/courseimg14.jpg";
+import courseimg20 from "../assets/courseimg20.jpg";
 import certImage from "../assets/cert.png";
 import azureImage from "../assets/azure.png";
 import courseimg6 from "../assets/courseimg6.jpg";
@@ -8,35 +7,25 @@ import courseimg8 from "../assets/courseimg8.jpg";
 import courseimg9 from "../assets/courseimg9.jpg";
 import courseimg10 from "../assets/courseimg10.jpg";
 
-const DeepLearning = () => {
+const C = () => {
   return (
     <>
       {/* Hero Section */}
       <section
         className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg14})` }}
+        style={{ backgroundImage: `url(${courseimg20})` }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" />
 
         <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Deep Learning</h1>
+          <h1 className="text-5xl font-extrabold mb-10">C Programming</h1>
 
           <ul className="space-y-4 text-lg leading-relaxed">
-
-<li>Learn from AI professionals.</li>
-
-<li>Earn a deep learning certification.</li>
-
-<li>Work on hands-on projects.</li>
-
-<li>Master TensorFlow, PyTorch, and advanced algorithms.</li>
+            <li>Learn C programming from industry experts</li>
+            <li>Master low-level programming concepts</li>
+            <li>Work on real-world projects</li>
+            <li>Understand memory management and pointers</li>
           </ul>
-          {/* <h3>
-            <strong>
-           Course Duration : 45 days
-            </strong>
-          </h3> */}
-          
 
           <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
             Buy for ₹20,000
@@ -53,15 +42,13 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Overview</h2>
               <p className="mb-4">
-              Advance your expertise with our Deep Learning course, designed for those looking to dive deep into the complexities of neural networks, machine learning, and artificial intelligence. This course covers foundational concepts and advanced techniques, including convolutional and recurrent neural networks, TensorFlow, and Keras. You’ll gain hands-on experience through projects that apply deep learning to real-world problems.
+                Start your programming journey with C, one of the most powerful and foundational programming languages.
+                This course covers everything from basic syntax to advanced programming concepts, preparing you for a variety of software development and computational problem-solving scenarios.
               </p>
               <h2 className="text-3xl font-bold mb-4">Key Highlights</h2>
               <ul className="list-disc list-inside space-y-2">
-               
-               
-                <li> Cutting-Edge Content: Study the latest in deep learning advancements.</li>
-                <li>Project-Driven Learning**: Implement deep learning models in various sectors.</li>
-                <li>Expert Mentorship: Guidance from professionals with deep industry experience.</li>
+                <li>Deep Dive into C: Understand the core aspects of C, including memory management, pointers, and data structures.</li>
+                <li>Hands-On Coding: Write, debug, and maintain efficient and scalable C programs.</li>
               </ul>
             </div>
 
@@ -69,11 +56,9 @@ const DeepLearning = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Who Can Apply?</h2>
               <ul className="list-disc list-inside space-y-2">
-
-<li>Data scientists and machine learning engineers looking to specialize in deep learning.</li>
-<li>Students with a background in computer science or related fields.</li>
-<li>Professionals in tech seeking to enhance their AI capabilities.</li>
-
+                <li>Aspiring software developers</li>
+                <li>Students of computer science and engineering</li>
+                <li>Professionals in technical fields needing programming basics</li>
               </ul>
             </div>
 
@@ -82,17 +67,15 @@ const DeepLearning = () => {
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
                 {[
-                  "Fundamentals Of Deep Learning",
-                  "Artificial Neural Networks (Ann)",
-                  "Convolutional Neural Networks (CNN)",
-                  "Recurrent Neural Networks (RNN)",
-                  "Regional Convolutional Neural Networks (R-CNN)",
-                  "Representation Learning And Generative Adversarial Networks (GAN)",
-                  "Deep Learning Architectures",
-                  "Deep Learning Applications For Reinforcement Learning And Nlp",
-                  "Projects",
+                  "C Programming and Logic Building",
+                  "Operators",
+                  "Conditional Statements and Loops",
+                  "Functions",
+                  "Arrays and Pointers",
+                  "Advance Data Structures",
+                  "Coding Practice"
                 ].map((item, index) => {
-                  if (item === "Fundamentals Of Computer Vision") {
+                  if (item === "C Programming and Logic Building") {
                     return (
                       <details
                         key={index}
@@ -104,18 +87,32 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Introduction To C Programming</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Introduction to Computer Vision</li>
-                            <li>Digital Image Fundamentals</li>
-                            <li>Image Representation and Formats</li>
-                            <li>Color Spaces and Models</li>
-                            <li>Basic Image Operations</li>
-                            <li>Image Quality and Enhancement</li>
+                            <li>Introduction</li>
+                            <li>History Of C</li>
+                            <li>Applications Of C</li>
+                            <li>Setting Up The Development Environment</li>
+                            <li>Basic Syntax</li>
+                            <li>Structure Of A C Program</li>
+                            <li>Main () Function</li>
+                            <li>Comments</li>
+                            <li>Basic I/O Operations</li>
+                            <li>Printf</li>
+                            <li>Scanf</li>
+                            <li>Data Types</li>
+                            <li>Primitive Data Types (Int, Char, Float, Double)</li>
+                            <li>Void Type</li>
+                            <li>Type Qualifiers (Signed, Unsigned, Short, Long)</li>
+                            <li>Variables</li>
+                            <li>Declaration And Initialization</li>
+                            <li>Scope And Lifetime</li>
+                            <li>Constants (Const And #Define)</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Image Processing Techniques") {
+                  } else if (item === "Operators") {
                     return (
                       <details
                         key={index}
@@ -127,18 +124,43 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">C Operators</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Filtering and Convolution</li>
-                            <li>Morphological Operations</li>
-                            <li>Edge Detection Algorithms</li>
-                            <li>Image Segmentation</li>
-                            <li>Noise Reduction Techniques</li>
-                            <li>Image Transformation</li>
+                            <li>Arithmetic Operators</li>
+                            <li>Addition</li>
+                            <li>Subtraction</li>
+                            <li>Multiplication</li>
+                            <li>Division</li>
+                            <li>Modulus</li>
+                            <li>Relational Operators</li>
+                            <li>Equal To</li>
+                            <li>Not Equal To</li>
+                            <li>Greater Than, Less Than, etc.</li>
+                            <li>Logical Operators</li>
+                            <li>And</li>
+                            <li>Or</li>
+                            <li>Not</li>
+                            <li>Assignment Operators</li>
+                            <li>Simple Assignment</li>
+                            <li>Compound Assignment</li>
+                            <li>Increment And Decrement Operators</li>
+                            <li>Pre Increment</li>
+                            <li>Post Increment</li>
+                            <li>Pre Decrement</li>
+                            <li>Post Decrement</li>
+                            <li>Conditional Operator</li>
+                            <li>Ternary Operator ? :</li>
+                            <li>Bitwise Operators</li>
+                            <li>And</li>
+                            <li>Or</li>
+                            <li>Xor</li>
+                            <li>Not</li>
+                            <li>Shift Operators</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Feature Detection And Description") {
+                  } else if (item === "Conditional Statements and Loops") {
                     return (
                       <details
                         key={index}
@@ -150,18 +172,30 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Control Flow in C</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Corner Detection (Harris, Shi-Tomasi)</li>
-                            <li>Scale-Invariant Feature Transform (SIFT)</li>
-                            <li>Speeded Up Robust Features (SURF)</li>
-                            <li>ORB (Oriented FAST and Rotated BRIEF)</li>
-                            <li>Feature Matching Algorithms</li>
-                            <li>Feature Descriptors</li>
+                            <li>Conditional Statements</li>
+                            <li>If</li>
+                            <li>If-Else</li>
+                            <li>Else If</li>
+                            <li>Nested If Else Statement</li>
+                            <li>Loops</li>
+                            <li>For Loop</li>
+                            <li>While Loop</li>
+                            <li>Do-While Loop</li>
+                            <li>Jump Statements</li>
+                            <li>Break</li>
+                            <li>Continue</li>
+                            <li>Go To</li>
+                            <li>Switch Statements</li>
+                            <li>Applications Of Switch Statements</li>
+                            <li>Break And Continue</li>
+                            <li>Applications Of Break And Continue</li>
                           </ul>
                         </div>
                       </details>
                     );
-                  } else if (item === "Object Detection And Recognition") {
+                  } else if (item === "Functions") {
                     return (
                       <details
                         key={index}
@@ -173,13 +207,132 @@ const DeepLearning = () => {
                           <span className="text-xl font-bold hidden group-open:block">-</span>
                         </summary>
                         <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Functions in C</div>
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Template Matching</li>
-                            <li>Haar Cascades</li>
-                            <li>HOG (Histogram of Oriented Gradients)</li>
-                            <li>Face Detection and Recognition</li>
-                            <li>Object Classification</li>
-                            <li>Multi-object Detection</li>
+                            <li>Function Basics</li>
+                            <li>Definition And Declaration</li>
+                            <li>Calling Functions</li>
+                            <li>Return Values</li>
+                            <li>Parameter Passing</li>
+                            <li>By Value</li>
+                            <li>By Reference</li>
+                            <li>Scope And Lifetime</li>
+                            <li>Local And Global Variables</li>
+                            <li>Static Variables</li>
+                            <li>Recursion</li>
+                            <li>Basic Recursion</li>
+                            <li>Recursive Vs Iterative Approach</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Arrays and Pointers") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Arrays and Pointers in C</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Arrays</li>
+                            <li>Declaration And Initialization</li>
+                            <li>Accessing Elements</li>
+                            <li>Multidimensional Arrays</li>
+                            <li>Strings</li>
+                            <li>Declaration And Initialization</li>
+                            <li>Standard Library Functions (Strcpy, Strcat, Strlen, Strcmp)</li>
+                            <li>Reading And Writing Strings</li>
+                            <li>Pointer Basics</li>
+                            <li>Declaration And Initialization</li>
+                            <li>Dereferencing Pointers</li>
+                            <li>Pointer Arithmetic</li>
+                            <li>Pointers And Arrays</li>
+                            <li>Array Name As A Pointer</li>
+                            <li>Pointer To Array</li>
+                            <li>Pointers And Functions</li>
+                            <li>Passing Pointers To Functions</li>
+                            <li>Function Pointers</li>
+                            <li>Memory Allocation Functions</li>
+                            <li>Malloc</li>
+                            <li>Calloc</li>
+                            <li>Realloc</li>
+                            <li>Free</li>
+                            <li>Handling Memory Leaks</li>
+                            <li>Importance Of Freeing Memory</li>
+                            <li>Tools For Detecting Memory Leaks</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Advance Data Structures") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Advanced C Concepts</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Structures</li>
+                            <li>Defining And Using Structures</li>
+                            <li>Nested Structures</li>
+                            <li>Arrays Of Structures</li>
+                            <li>Unions</li>
+                            <li>Defining And Using Unions</li>
+                            <li>Difference Between Structures And Unions</li>
+                            <li>File Operations</li>
+                            <li>Opening And Closing Files (Fopen, Fclose)</li>
+                            <li>Reading And Writing Files (Fread, Fwrite, Fprintf, Fscanf)</li>
+                            <li>Error Handling In File Operations</li>
+                            <li>Preprocessor Directives</li>
+                            <li>Macros (#Define)</li>
+                            <li>File Inclusion (#Include)</li>
+                            <li>Conditional Compilation (#Ifdef, #Ifndef, #Endif)</li>
+                            <li>Type Casting</li>
+                            <li>Implicit And Explicit Casting</li>
+                            <li>Command-Line Arguments</li>
+                            <li>Argc And Argv</li>
+                            <li>Variable Arguments</li>
+                            <li>Using Stdarg.H For Functions With Variable Arguments</li>
+                            <li>Linked Lists</li>
+                            <li>Singly Linked Lists</li>
+                            <li>Doubly Linked Lists</li>
+                            <li>Circular Linked Lists</li>
+                            <li>Other Data Structures</li>
+                            <li>Stacks</li>
+                            <li>Queues</li>
+                            <li>Trees</li>
+                            <li>Graphs</li>
+                          </ul>
+                        </div>
+                      </details>
+                    );
+                  } else if (item === "Coding Practice") {
+                    return (
+                      <details
+                        key={index}
+                        className="group border border-purple-800 rounded overflow-hidden"
+                      >
+                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                          <span>{item}</span>
+                          <span className="text-xl font-bold group-open:hidden">+</span>
+                          <span className="text-xl font-bold hidden group-open:block">-</span>
+                        </summary>
+                        <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
+                          <div className="font-bold text-black">Practical Coding Exercises</div>
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Hands On Experience With Different Logical Questions</li>
                           </ul>
                         </div>
                       </details>
@@ -244,19 +397,16 @@ const DeepLearning = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side: Career Information */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 uppercase tracking-wide">
-              Why Pursue the Deep Learning Course?
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 Lowercase tracking-wide">
+                Why to Learn C Programming?
               </h1>
               
               <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <ul className="list-disc list-inside space-y-2">
-              
-              <li>Cutting-Edge Technology: Deep learning is at the forefront of artificial intelligence, driving innovations in areas such as image and speech recognition, autonomous systems, and more.</li>
-              <li>Career Growth: The demand for deep learning expertise is rapidly growing across industries, offering lucrative career opportunities in AI research, data science, and machine learning engineering.</li>
-              <li>Hands-On Learning: Gain practical experience by working on projects that simulate real-world applications, enhancing your ability to deploy deep learning models effectively.</li>
-              <li>Industry Relevance: Deep learning frameworks like TensorFlow and PyTorch are widely adopted in industry, ensuring that skills acquired are directly applicable to current AI projects and developments.</li>
-              <li>Innovation Potential: Mastering deep learning allows you to contribute to groundbreaking advancements in artificial intelligence, shaping the future of technology and its applications.</li>
-              </ul>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Foundation for Learning Other Languages: Many modern languages are based on C.</li>
+                  <li>Critical for System Level Programming: Essential for writing efficient, low-level code.</li>
+                  <li>Wide Range of Applications: From developing operating systems to IoT devices.</li>
+                </ul>
               </div>
             </div>
 
@@ -268,13 +418,6 @@ const DeepLearning = () => {
                   alt="Certificate of Completion" 
                   className="w-full max-w-md h-auto shadow-2xl rounded-lg"
                 />
-                
-                {/* Optional overlay for interactive elements */}
-                {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-                    <p className="text-sm">Certificate of Completion</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -370,23 +513,22 @@ const DeepLearning = () => {
             </div>
             <div className="space-y-4">
               {[
-                 {
-                    question: " What deep learning frameworks are covered in the course?",
-                    answer: "The course covers popular deep learning frameworks such as TensorFlow and PyTorch, providing hands-on experience in implementing neural networks and advanced algorithms."
-                  },
-                  {
-                    question: "How will hands-on projects help in understanding deep learning concepts?",
-                    answer: "Hands-on projects allow you to apply theoretical knowledge to practical scenarios, helping you grasp complex concepts and gain proficiency in developing and deploying deep learning models."
-                  },
-                  {
-                    question: "Are there any prerequisites for enrolling in the Deep Learning course?",
-                    answer: "Basic knowledge of Python programming and familiarity with machine learning concepts are recommended. A strong understanding of linear algebra and calculus is beneficial for understanding advanced algorithms."
-                  },
-                  
-                  {
-                    question: "What career paths can a Deep Learning certification lead to?",
-                    answer: "A Deep Learning certification qualifies you for roles such as deep learning engineer, AI researcher, machine learning engineer, and data scientist in industries ranging from healthcare and finance to autonomous vehicles and robotics."
-                  }
+                {
+                  question: "How does C programming help in career development?",
+                  answer: "Strong C skills are highly respected in tech, opening doors to advanced programming roles."
+                },
+                {
+                  question: "What are the challenges of learning C?",
+                  answer: "Managing memory manually and understanding pointers can be challenging but are rewarding skills to acquire."
+                },
+                {
+                  question: "Is C still relevant today?",
+                  answer: "Absolutely! C remains fundamental for system programming, embedded systems, and performance-critical applications."
+                },
+                {
+                  question: "What kind of projects can I build with C?",
+                  answer: "You can build operating systems, compilers, embedded systems, game engines, and high-performance applications."
+                }
               ].map((faq, index) => (
                 <details
                   key={index}
@@ -476,4 +618,4 @@ const DeepLearning = () => {
   );
 };
 
-export default DeepLearning;
+export default C;
