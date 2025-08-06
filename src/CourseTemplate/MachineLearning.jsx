@@ -25,9 +25,12 @@ const MachineLearning = () => {
             <li><strong>Skill Mastery:</strong> Master essential skills such as data analysis, model building, machine learning algorithms, and implementation.</li>
           </ul>
 
-          <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹20,000
-          </button>
+          <button className="mt-10 bg-[#b7b100] text-[#ffffff] text-[20px] font-medium px-4 py-2 border-0 rounded-[3px] leading-[1.7em] bg-cover bg-center bg-no-repeat shadow-md group flex items-center gap-2 transition-all duration-300">
+  <span>Buy for ₹20,000</span>
+  <span className="text-4xl transform translate-x-[-10px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+    ›
+  </span>
+</button>
         </div>
       </section>
 
@@ -90,9 +93,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -116,9 +119,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -154,9 +157,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -173,9 +176,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -194,9 +197,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -216,9 +219,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -258,9 +261,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -298,9 +301,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -319,9 +322,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -365,9 +368,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -407,9 +410,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -426,9 +429,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -448,9 +451,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -467,9 +470,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -488,9 +491,9 @@ const MachineLearning = () => {
                   return (
                     <details
                       key={index}
-                      className="group border border-purple-800 rounded overflow-hidden"
+                      className="group border bg-[#4f1964] rounded overflow-hidden"
                     >
-                      <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                         <span>{item}</span>
                         <span className="text-xl font-bold group-open:hidden">+</span>
                         <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -511,7 +514,7 @@ const MachineLearning = () => {
             <div className="bg-blue-100 p-6 rounded-md shadow-md space-y-6">
               <h3 className="text-xl font-bold">Corporate Training</h3>
               <p>We give Corporate Employees the Training They Need to Learn & Lead</p>
-              <button className="bg-purple-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-purple-700 transition-all">
+              <button className="bg-[#4f1964] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#4f1964] transition-all">
                 CONTACT US
               </button>
               <div className="space-y-4 pt-6 border-t border-gray-300">

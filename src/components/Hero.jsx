@@ -174,7 +174,9 @@ const Hero = () => {
   }
 
   return (
-    <section className="group relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
+    // <section className="group relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
+    <section className="relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
+
       {/* Background Image */}
       <div
   className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-all duration-500"
@@ -199,9 +201,20 @@ const Hero = () => {
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-3xl">
             {slides[current].subtext}
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
+          {/* <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
             Explore Courses
-          </button>
+          </button> */}
+        <button className="group bg-orange-500 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-md transition flex items-center">
+  <span className="relative flex items-center">
+    Explore Courses
+    <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
+      &gt;
+    </span>
+  </span>
+</button>
+
+
+
         </div>
       </div>
 

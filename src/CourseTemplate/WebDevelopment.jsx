@@ -28,9 +28,12 @@ const WebDevelopment = () => {
             <li>Master tools like R, Python, Tableau, and SQL.</li>
           </ul>
 
-          <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹25,000
-          </button>
+          <button className="mt-10 bg-[#b7b100] text-[#ffffff] text-[20px] font-medium px-4 py-2 border-0 rounded-[3px] leading-[1.7em] bg-cover bg-center bg-no-repeat shadow-md group flex items-center gap-2 transition-all duration-300">
+  <span>Buy for ₹30,000</span>
+  <span className="text-4xl transform translate-x-[-10px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+    ›
+  </span>
+</button>
         </div>
       </section>
 

@@ -96,7 +96,9 @@ const ContactHome = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center px-6 pt-32 max-w-3xl mx-auto w-full">
+    // <div className="min-h-screen bg-white flex flex-col items-center px-6 pt-32 max-w-3xl mx-auto w-full">
+    <div className="min-h-screen bg-white flex flex-col items-center px-6 pt-[5%] max-w-3xl mx-auto w-full">
+
       <h1 className="text-4xl font-bold text-center text-blue-500 mb-4">Contact Us</h1>
       <p className="text-center text-gray-500 mb-8 text-lg">
         Interested in joining as a mentor or mentee? Or want to partner with us? Click a tab below to proceed.
@@ -243,12 +245,15 @@ const ContactHome = () => {
         </div>
 
         <button
-          type="submit"
-          disabled={loading}
-          className="w-1/2 mx-auto bg-black text-white py-3 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors mt-4"
-        >
-          {loading ? "Submitting..." : "Submit"}
-        </button>
+  type="submit"
+  disabled={loading}
+  className="w-1/2 mx-auto text-white py-3 rounded-md text-lg font-semibold transition-colors mt-4 mb-16"
+  style={{ backgroundColor: "#ed8603" }}
+>
+  {loading ? "Submitting..." : "Submit"}
+</button>
+
+
       </form>
     </div>
   );

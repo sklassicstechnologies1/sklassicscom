@@ -35,9 +35,12 @@ const Sql = () => {
           </h3> */}
           
 
-          <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹10,000
-          </button>
+          <button className="mt-10 bg-[#b7b100] text-[#ffffff] text-[20px] font-medium px-4 py-2 border-0 rounded-[3px] leading-[1.7em] bg-cover bg-center bg-no-repeat shadow-md group flex items-center gap-2 transition-all duration-300">
+  <span>Buy for ₹10,000</span>
+  <span className="text-4xl transform translate-x-[-10px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+    ›
+  </span>
+</button>
         </div>
       </section>
 
@@ -89,9 +92,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -128,9 +131,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -154,9 +157,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -180,9 +183,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -203,9 +206,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -224,9 +227,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -246,9 +249,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -271,9 +274,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -294,9 +297,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -316,9 +319,9 @@ const Sql = () => {
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -339,7 +342,7 @@ const Sql = () => {
             <div className="bg-blue-100 p-6 rounded-md shadow-md space-y-6">
               <h3 className="text-xl font-bold">Corporate Training</h3>
               <p>We give Corporate Employees the Training They Need to Learn & Lead</p>
-              <button className="bg-purple-800 text-white px-4 py-2 rounded-md font-semibold hover:bg-purple-700 transition-all">
+              <button className="bg-[#4f1964] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#4f1964] transition-all">
                 CONTACT US
               </button>
               <div className="space-y-4 pt-6 border-t border-gray-300">
@@ -542,48 +545,40 @@ const Sql = () => {
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Course 1: Natural Language Processing */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg6})` }}>
-                </div>
-                <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Natural Language Processing</h3>
-                  <p className="text-gray-600 text-sm mb-3">2 Months</p>
-                  <p className="text-red-600 font-bold text-xl">₹20,000</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Course 1: Data Science */}
+              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg7})` }}></div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Business Analytics</h3>
+                  <p className="text-[#666666] font-bold text-lg">Buy for ₹20,000</p>
                 </div>
               </div>
 
               {/* Course 2: Big Data Analytics */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg8})` }}>
-                </div>
-                <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Big Data Analytics</h3>
-                  <p className="text-gray-600 text-sm mb-3">3 Months</p>
-                  <p className="text-red-600 font-bold text-xl">₹30,000</p>
+              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg5})` }}></div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Data Analytics</h3>
+                  <p className="text-[#666666] font-bold text-lg">Buy for ₹25,000</p>
                 </div>
               </div>
 
-              {/* Course 3: Tableau */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg10})` }}>
-                </div>
-                <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">Tableau</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+              {/* Course 3: Machine Learning */}
+              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg10})` }}></div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Machine Learning</h3>
+                  <p className="text-[#666666] font-bold text-lg">Buy for ₹20,000</p>
                 </div>
               </div>
 
               {/* Course 4: Power BI */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg9})` }}>
-                </div>
-                <div className="p-6 bg-gray-50">
+              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${courseimg9})` }}></div>
+                <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Power BI</h3>
-                  <p className="text-gray-600 text-sm mb-3">45 Days</p>
-                  <p className="text-red-600 font-bold text-xl">₹15,000</p>
+                  <p className="text-[#666666] font-bold text-lg">Buy for ₹15,000</p>
                 </div>
               </div>
             </div>

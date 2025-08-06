@@ -30,11 +30,10 @@ const AiPage = () => {
 
           <li>Get certified and enhance your resume with a recognized qualification.</li>
           </ul>
-          <h3><br/>
-            <strong>
-           Course Duration : 100 Days
-            </strong>
-          </h3>
+          <br/>
+          <h3 className="text-[#ffffff] font-bold text-base sm:text-lg md:text-xl">
+  Course Duration : 100 Days
+</h3>
           
 
           <button 
@@ -130,9 +129,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -231,9 +230,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -269,9 +268,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -290,9 +289,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -326,9 +325,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -426,9 +425,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -489,9 +488,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -613,9 +612,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -661,9 +660,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -689,9 +688,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>
@@ -711,9 +710,9 @@ Join us to master AI and stay ahead in the technological race!
                     return (
                       <details
                         key={index}
-                        className="group border border-purple-800 rounded overflow-hidden"
+                        className="group border bg-[#4f1964] rounded overflow-hidden"
                       >
-                        <summary className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                        <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
                           <span>{item}</span>
                           <span className="text-xl font-bold group-open:hidden">+</span>
                           <span className="text-xl font-bold hidden group-open:block">-</span>

@@ -16,8 +16,15 @@ const projects = [
 const Projects = () => {
   return (
     <div className="pt-[120px] max-w-5xl mx-auto px-4 py-12">
-      {/* Heading */}
-      <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+      {/* Heading with zoom animation */}
+      <h2 
+        className="text-3xl font-bold text-center mb-8 animate-in"
+        style={{
+          animation: 'zoomIn 1s ease-out',
+        }}
+      >
+        Projects
+      </h2>
 
       {/* Search Bar */}
       <div className="flex justify-center mb-12">
@@ -49,6 +56,23 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      {/* Add the animation keyframes to the global styles */}
+      <style jsx global>{`
+        @keyframes zoomIn {
+          from {
+            transform: scale(0.5);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+        .animate-in {
+          animation-fill-mode: both;
+        }
+      `}</style>
     </div>
   );
 };

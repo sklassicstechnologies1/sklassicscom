@@ -170,7 +170,9 @@ const CourseHome = () => {
   }
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    // <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-white pt-16 pb-4 px-6 md:px-12">
+
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
           Our Courses
@@ -203,19 +205,22 @@ const CourseHome = () => {
         </div>
 
         {/* Button */}
-        <div className="text-center mt-12">
-          <button 
-            onClick={handleViewAllCourses}
-            className="bg-orange-400 text-white text-center font-semibold py-5 px-4 rounded-full transition duration-300 group text-sm inline-flex items-center gap-2 hover:bg-orange-500"
-          >
-            <span>View All Courses</span>
-            <span
-              className="opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
-            >
-              &gt;
-            </span>
-          </button>
-        </div>
+        <div className="flex justify-center mt-6 mb-[0.2%]">
+  <button 
+    onClick={handleViewAllCourses}
+    className="bg-[#eb8603] text-white font-semibold py-3 px-6 rounded-full transition duration-300 group text-sm flex items-center justify-center gap-2 hover:bg-[#eb8603]"
+  >
+    <span>View All Courses</span>
+    <span
+      className="opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1"
+    >
+      &gt;
+    </span>
+  </button>
+</div>
+
+
+
       </div>
     </section>
   )

@@ -35,6 +35,7 @@ import Java from './CourseTemplate/Java';
 import R from './CourseTemplate/R';
 import Flask from './CourseTemplate/Flask';
 import Aptitude from './CourseTemplate/Aptitude';
+import BusinessAnalytics from './CourseTemplate/BusinessAnalytics';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         <Route path="/data-analytics" element={<DataAnalytics/>} />
         <Route path="/natural-language-processing" element={<NLP/>} />
         <Route path="/big-data-analytics" element={<BigData/>} />
+        <Route path="/business-analytics" element={<BusinessAnalytics/>} />
         <Route path="/powerbi" element={<PowerBi/>} />
         <Route path="/tableau" element={<Tableau/>} />
         <Route path="/excel" element={<Excel/>} />
