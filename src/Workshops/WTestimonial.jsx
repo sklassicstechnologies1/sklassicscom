@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Varun Kumar",
+    name: "varun Kumar",
     role: "Our Student",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     text: "Sed blandit posuere nunc in hendrerit. Pellentesque placerat enim nec velit mattis finibus. Donec gravida ligula sit amet est gravida.",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Karan Sharma",
+    name: "karan Sharma",
     role: "Our Student",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
     text: "Curabitur at velit auctor, vehicula nulla non, semper lacus. Phasellus suscipit tempor enim a auctor.",
@@ -27,7 +27,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Mukund Vastav",
+    name: "Mukund vastav",
     role: "Top Performer",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
     text: "Aliquam ut eros eu justo vehicula auctor a eget dui. Praesent vestibulum ex et nisl fermentum, ut feugiat magna tincidunt.",
@@ -37,66 +37,104 @@ const testimonials = [
 
 const WTestimonial = () => {
   const sliderRef = useRef(null);
+  const sliderContentRef = useRef(null);
+  const isScrollingRef = useRef(false);
 
   useEffect(() => {
     const slider = sliderRef.current;
+    const sliderContent = sliderContentRef.current;
     let scrollInterval;
-
+    let animationFrame;
+  
+    // Clone the testimonials for seamless looping
+    const clonedTestimonials = [...testimonials, ...testimonials];
+  
     const startAutoScroll = () => {
-      scrollInterval = setInterval(() => {
-        if (slider) {
-          slider.scrollBy({ left: 320, behavior: "smooth" });
-          if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
-            slider.scrollTo({ left: 0, behavior: "smooth" });
-          }
+      if (!slider || !sliderContent || isScrollingRef.current) return;
+  
+      isScrollingRef.current = true;
+      const cardWidth = 320; // Width of each testimonial card
+      const scrollAmount = 2; // Increased from 1 to 2 (moves 2px per frame)
+      const scrollSpeed = 16; // Reduced from 30 to 16ms (~60fps animation)
+  
+      const scroll = () => {
+        if (!slider) return;
+  
+        slider.scrollLeft += scrollAmount;
+  
+        // Reset to start when reaching halfway (seamless loop)
+        if (slider.scrollLeft >= slider.scrollWidth / 2) {
+          slider.scrollLeft = 0;
         }
-      }, 3000);
+  
+        animationFrame = requestAnimationFrame(scroll);
+      };
+  
+      animationFrame = requestAnimationFrame(scroll);
+  
+      return () => {
+        cancelAnimationFrame(animationFrame);
+        isScrollingRef.current = false;
+      };
     };
-
-    startAutoScroll();
-    return () => clearInterval(scrollInterval);
+  
+    // Start scrolling after a brief delay
+    const startDelay = setTimeout(startAutoScroll, 1000);
+  
+    return () => {
+      clearTimeout(startDelay);
+      cancelAnimationFrame(animationFrame);
+      clearInterval(scrollInterval);
+    };
   }, []);
+  // Double the testimonials for seamless looping
+  const displayTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <div className="bg-white py-12 px-4 md:px-8">
+    <div className="bg-white py-12 px-4 overflow-hidden">
+      {/* Header */}
       <div className="text-center mb-10">
         <p className="text-lg text-gray-500">Testimonial</p>
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
-          See What Our Students Say
-        </h1>
+        <h1 className="text-3xl font-bold text-gray-800">See What Our Students Say</h1>
       </div>
 
-      <div className="overflow-hidden">
-        <div
+      {/* Testimonial Slider */}
+      <div className="relative w-full">
+        <div 
           ref={sliderRef}
-          className="flex gap-6 px-2 md:px-6 overflow-x-auto scroll-smooth no-scrollbar"
+          className="flex overflow-x-auto scroll-smooth whitespace-nowrap py-4 no-scrollbar"
+          style={{ scrollbarWidth: 'none' }}
         >
-          {testimonials.map((t) => (
-            <div
-              key={t.id}
-              className="flex-shrink-0 w-[90%] sm:w-[300px] md:w-[340px] lg:w-[360px] bg-white shadow-md rounded-xl p-5 space-y-4 text-center border"
-            >
-              <div className="flex items-center gap-4">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-14 h-14 rounded-full object-cover"
-                />
-                <div className="text-left">
-                  <h3 className="font-semibold text-gray-800">{t.name}</h3>
-                  <p className="text-sm text-gray-500">{t.role}</p>
+          <div ref={sliderContentRef} className="flex gap-6">
+            {displayTestimonials.map((testimonial, index) => (
+              <div 
+                key={`${testimonial.id}-${index}`}
+                className="flex-shrink-0 w-[300px] md:w-[350px] bg-white rounded-xl shadow-md p-6"
+              >
+                <div className="flex flex-col">
+                  <div className="flex items-center mb-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name} 
+                      className="w-12 h-12 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-800">{testimonial.name}</h3>
+                      <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-4 text-sm md:text-base line-clamp-3">
+                    {testimonial.text}
+                  </p>
+                  <div className="flex text-yellow-400">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <span key={i}>★</span>
+                    ))}
+                  </div>
                 </div>
               </div>
-
-              <div className="text-sm text-gray-600 text-left overflow-hidden max-h-[80px]">
-                {t.text}
-              </div>
-
-              <div className="text-yellow-400 text-lg">
-                {"⭐".repeat(t.rating)}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

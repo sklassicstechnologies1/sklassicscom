@@ -36,6 +36,9 @@ import R from './CourseTemplate/R';
 import Flask from './CourseTemplate/Flask';
 import Aptitude from './CourseTemplate/Aptitude';
 import BusinessAnalytics from './CourseTemplate/BusinessAnalytics';
+import WorkshopNLP from './Workshops/WorkshopNLP';
+import WorkshopPowerbi from './Workshops/WorkshopPowerbi';
+import WorkshopML from './Workshops/WorkshopML';
 
 
 function App() {
@@ -55,6 +58,9 @@ function App() {
         <Route path="/prediction-of-water-quality" element={<WaterQuality />} />
 
         <Route path="/workshops" element={<Workshops />} />
+        <Route path="/workshop-nlp" element={<WorkshopNLP/>} />
+        <Route path="/workshop-powerbi" element={<WorkshopPowerbi />}/>
+        <Route path="/workshop-ml" element={<WorkshopML/>}/>
         
         {/* Course Routes */}
         <Route path="/data-science" element={<DataSciencePage/>} />
