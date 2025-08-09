@@ -1,256 +1,493 @@
-// // import React, { useState, useEffect } from 'react'
+// // // // import React, { useState, useEffect } from 'react'
+
+// // // // const slides = [
+// // // //   {
+// // // //     image: 'https://sklassics.com/wp-content/uploads/2024/06/home-1.jpg',
+// // // //     heading: 'Find courses that are best for your career',
+// // // //     subtext:
+// // // //       'Take online IT courses to advance your education and jumpstart your career in information technology.',
+// // // //   },
+// // // //   {
+// // // //     image: 'https://sklassics.com/wp-content/uploads/2024/07/homepage-3.jpg',
+// // // //     heading: 'Accelerate Your Career Growth & Upskill Yourself',
+// // // //     subtext:
+// // // //       'Join our expert-led programs to transform skills into impact. Real projects. Real progress.',
+// // // //   },
+// // // // ]
+
+// // // // const Hero = () => {
+// // // //   const [current, setCurrent] = useState(0)
+// // // //   const [animateKey, setAnimateKey] = useState(0) // used to re-trigger animations
+
+// // // //   // Auto slide
+// // // //   useEffect(() => {
+// // // //     const timer = setInterval(() => {
+// // // //       setCurrent((prev) => {
+// // // //         const next = prev === slides.length - 1 ? 0 : prev + 1
+// // // //         setAnimateKey(Date.now()) // update key to trigger animation
+// // // //         return next
+// // // //       })
+// // // //     }, 5000)
+
+// // // //     return () => clearInterval(timer)
+// // // //   }, [])
+
+// // // //   // Manual
+// // // //   const goToSlide = (index) => {
+// // // //     if (index !== current) {
+// // // //       setCurrent(index)
+// // // //       setAnimateKey(Date.now())
+// // // //     }
+// // // //   }
+
+// // // //   const prevSlide = () => {
+// // // //     const newIndex = current === 0 ? slides.length - 1 : current - 1
+// // // //     setCurrent(newIndex)
+// // // //     setAnimateKey(Date.now())
+// // // //   }
+
+// // // //   const nextSlide = () => {
+// // // //     const newIndex = current === slides.length - 1 ? 0 : current + 1
+// // // //     setCurrent(newIndex)
+// // // //     setAnimateKey(Date.now())
+// // // //   }
+
+// // // //   return (
+// // // // <section className="group relative w-full h-[100vh] overflow-hidden pt-[140px]">
+
+// // // //       {/* Background Image */}
+// // // //       <div
+// // // //         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
+// // // //         style={{
+// // // //           backgroundImage: `url('${slides[current].image}')`,
+// // // //         }}
+// // // //       />
+
+// // // //       {/* Overlay */}
+// // // //       <div className="absolute inset-0 bg-[#11061f]/85" />
+
+// // // //       {/* Content */}
+// // // // <div className="relative z-10 flex items-center h-full px-6 md:px-12 lg:pl-32">
+// // // //         <div
+// // // //           key={animateKey} // ✅ re-mounts div to retrigger animation
+// // // //           className="max-w-2xl text-white text-left animate-fade-slide"
+// // // //         >
+// // // //           <h1 className="text-7xl sm:text-5xl md:text-6xl font-bold leading-snug md:leading-tight whitespace-pre-line mb-4">
+// // // //             {slides[current].heading}
+// // // //           </h1>
+// // // //           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
+// // // //             {slides[current].subtext}
+// // // //           </p>
+// // // //           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
+// // // //             Explore Courses
+// // // //           </button>
+// // // //         </div>
+// // // //       </div>
+
+// // // //       {/* Arrows */}
+// // // //       <button
+// // // //   onClick={prevSlide}
+// // // //   className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+// // // // >
+// // // //   ‹
+// // // // </button>
+
+// // // // <button
+// // // //   onClick={nextSlide}
+// // // //   className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+// // // // >
+// // // //   ›
+// // // // </button>
+
+
+// // // //       {/* Dots */}
+// // // //       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+// // // //         {slides.map((_, index) => (
+// // // //           <button
+// // // //             key={index}
+// // // //             onClick={() => goToSlide(index)}
+// // // //             className={`w-2 h-2 rounded-full transition-all duration-300 ${
+// // // //               current === index ? 'bg-white scale-125' : 'bg-white/50'
+// // // //             }`}
+// // // //           />
+// // // //         ))}
+// // // //       </div>
+// // // //     </section>
+// // // //   )
+// // // // }
+
+// // // // export default Hero
+
+
+// // // import React, { useState, useEffect } from 'react'
+// // // import home1 from '../assets/home-1.png'
+// // // import home2 from '../assets/home-2.png'
+
+
+// // // const slides = [
+// // //   {
+// // //     image: home1,
+// // //     heading: 'Find courses that are best\nfor your career',
+// // //     subtext:
+// // //       'Grow your skillset with the best online courses and certifications in management, technology, programming, and data science.',
+// // //   },
+// // //   {
+// // //     image: home2,
+// // //     heading: 'Accelerate Your Career\nGrowth & Upskill Yourself',
+// // //     subtext:
+// // //       'Take online IT courses to advance your education and jumpstart your career in information technology.',
+// // //   },
+// // // ]
+
+// // // const Hero = () => {
+// // //   const [current, setCurrent] = useState(0)
+// // //   const [animateKey, setAnimateKey] = useState(0)
+
+// // //   useEffect(() => {
+// // //     const timer = setInterval(() => {
+// // //       setCurrent((prev) => {
+// // //         const next = prev === slides.length - 1 ? 0 : prev + 1
+// // //         setAnimateKey(Date.now())
+// // //         return next
+// // //       })
+// // //     }, 5000)
+// // //     return () => clearInterval(timer)
+// // //   }, [])
+
+// // //   const goToSlide = (index) => {
+// // //     if (index !== current) {
+// // //       setCurrent(index)
+// // //       setAnimateKey(Date.now())
+// // //     }
+// // //   }
+
+// // //   const prevSlide = () => {
+// // //     const newIndex = current === 0 ? slides.length - 1 : current - 1
+// // //     setCurrent(newIndex)
+// // //     setAnimateKey(Date.now())
+// // //   }
+
+// // //   const nextSlide = () => {
+// // //     const newIndex = current === slides.length - 1 ? 0 : current + 1
+// // //     setCurrent(newIndex)
+// // //     setAnimateKey(Date.now())
+// // //   }
+
+// // //   return (
+// // //     // <section className="group relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
+// // //     <section className="relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
+
+// // //       {/* Background Image */}
+// // //       <div
+// // //   className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-all duration-500"
+// // //   style={{
+// // //     backgroundImage: `url('${slides[current].image}')`,
+// // //   }}
+// // // />
+
+
+// // //       {/* Dark Overlay */}
+// // //       <div className="absolute inset-0 bg-[#11061f]/80" />
+
+// // //       {/* Content */}
+// // //       <div className="relative z-10 w-full px-6 md:px-12 lg:pl-32 pb-[40px]">
+// // //         <div
+// // //           key={animateKey}
+// // //           className="max-w-4xl text-white animate-fade-slide"
+// // //         >
+// // //           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-snug md:leading-tight whitespace-pre-line mb-4">
+// // //             {slides[current].heading}
+// // //           </h1>
+// // //           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-3xl">
+// // //             {slides[current].subtext}
+// // //           </p>
+// // //           {/* <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
+// // //             Explore Courses
+// // //           </button> */}
+// // //         <button className="group bg-orange-500 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-md transition flex items-center">
+// // //   <span className="relative flex items-center">
+// // //     Explore Courses
+// // //     <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
+// // //       &gt;
+// // //     </span>
+// // //   </span>
+// // // </button>
+
+
+
+// // //         </div>
+// // //       </div>
+
+// // //       {/* Arrows */}
+// // //       <button
+// // //         onClick={prevSlide}
+// // //         className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+// // //       >
+// // //         ‹
+// // //       </button>
+// // //       <button
+// // //         onClick={nextSlide}
+// // //         className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+// // //       >
+// // //         ›
+// // //       </button>
+
+// // //       {/* Dots */}
+// // //       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+// // //         {slides.map((_, index) => (
+// // //           <button
+// // //             key={index}
+// // //             onClick={() => goToSlide(index)}
+// // //             className={`w-2 h-2 rounded-full transition-all duration-300 ${
+// // //               current === index ? 'bg-white scale-125' : 'bg-white/50'
+// // //             }`}
+// // //           />
+// // //         ))}
+// // //       </div>
+// // //     </section>
+// // //   )
+// // // }
+
+// // // export default Hero;
+
+
+
+
+// // import React, { useState, useEffect } from 'react';
+// // import home1 from '../assets/home-1.png';
+// // import home2 from '../assets/home-2.png';
 
 // // const slides = [
 // //   {
-// //     image: 'https://sklassics.com/wp-content/uploads/2024/06/home-1.jpg',
-// //     heading: 'Find courses that are best for your career',
-// //     subtext:
-// //       'Take online IT courses to advance your education and jumpstart your career in information technology.',
+// //     image: home1,
+// //     heading: 'Find courses that are best\nfor your career',
+// //     subtext: 'Grow your skillset with the best online courses and certifications in management, technology, programming, and data science.',
 // //   },
 // //   {
-// //     image: 'https://sklassics.com/wp-content/uploads/2024/07/homepage-3.jpg',
-// //     heading: 'Accelerate Your Career Growth & Upskill Yourself',
-// //     subtext:
-// //       'Join our expert-led programs to transform skills into impact. Real projects. Real progress.',
+// //     image: home2,
+// //     heading: 'Accelerate Your Career\nGrowth & Upskill Yourself',
+// //     subtext: 'Take online IT courses to advance your education and jumpstart your career in information technology.',
 // //   },
-// // ]
+// // ];
 
 // // const Hero = () => {
-// //   const [current, setCurrent] = useState(0)
-// //   const [animateKey, setAnimateKey] = useState(0) // used to re-trigger animations
+// //   const [current, setCurrent] = useState(0);
+// //   const [animateKey, setAnimateKey] = useState(0);
 
-// //   // Auto slide
 // //   useEffect(() => {
 // //     const timer = setInterval(() => {
 // //       setCurrent((prev) => {
-// //         const next = prev === slides.length - 1 ? 0 : prev + 1
-// //         setAnimateKey(Date.now()) // update key to trigger animation
-// //         return next
-// //       })
-// //     }, 5000)
+// //         const next = prev === slides.length - 1 ? 0 : prev + 1;
+// //         setAnimateKey(Date.now());
+// //         return next;
+// //       });
+// //     }, 5000);
+// //     return () => clearInterval(timer);
+// //   }, []);
 
-// //     return () => clearInterval(timer)
-// //   }, [])
-
-// //   // Manual
 // //   const goToSlide = (index) => {
 // //     if (index !== current) {
-// //       setCurrent(index)
-// //       setAnimateKey(Date.now())
+// //       setCurrent(index);
+// //       setAnimateKey(Date.now());
 // //     }
-// //   }
+// //   };
 
 // //   const prevSlide = () => {
-// //     const newIndex = current === 0 ? slides.length - 1 : current - 1
-// //     setCurrent(newIndex)
-// //     setAnimateKey(Date.now())
-// //   }
+// //     const newIndex = current === 0 ? slides.length - 1 : current - 1;
+// //     setCurrent(newIndex);
+// //     setAnimateKey(Date.now());
+// //   };
 
 // //   const nextSlide = () => {
-// //     const newIndex = current === slides.length - 1 ? 0 : current + 1
-// //     setCurrent(newIndex)
-// //     setAnimateKey(Date.now())
-// //   }
+// //     const newIndex = current === slides.length - 1 ? 0 : current + 1;
+// //     setCurrent(newIndex);
+// //     setAnimateKey(Date.now());
+// //   };
 
 // //   return (
-// // <section className="group relative w-full h-[100vh] overflow-hidden pt-[140px]">
-
+// //     <section className="relative w-full min-h-screen flex items-end overflow-hidden pb-10 md:pb-16">
 // //       {/* Background Image */}
 // //       <div
-// //         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
-// //         style={{
-// //           backgroundImage: `url('${slides[current].image}')`,
-// //         }}
+// //         className="absolute inset-0 bg-cover md:bg-contain bg-center bg-no-repeat transition-all duration-500"
+// //         style={{ backgroundImage: `url('${slides[current].image}')` }}
 // //       />
 
-// //       {/* Overlay */}
-// //       <div className="absolute inset-0 bg-[#11061f]/85" />
+// //       {/* Dark Overlay */}
+// //       <div className="absolute inset-0 bg-[#11061f]/80" />
 
 // //       {/* Content */}
-// // <div className="relative z-10 flex items-center h-full px-6 md:px-12 lg:pl-32">
+// //       <div className="relative z-10 w-full px-6 md:px-12 lg:px-32 pb-10 md:pb-16">
 // //         <div
-// //           key={animateKey} // ✅ re-mounts div to retrigger animation
-// //           className="max-w-2xl text-white text-left animate-fade-slide"
+// //           key={animateKey}
+// //           className="max-w-4xl text-white animate-fade-slide"
 // //         >
-// //           <h1 className="text-7xl sm:text-5xl md:text-6xl font-bold leading-snug md:leading-tight whitespace-pre-line mb-4">
+// //           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight whitespace-pre-line mb-4">
 // //             {slides[current].heading}
 // //           </h1>
-// //           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
+// //           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl">
 // //             {slides[current].subtext}
 // //           </p>
-// //           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
-// //             Explore Courses
+// //           <button className="group bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-md transition flex items-center">
+// //             <span className="relative flex items-center">
+// //               Explore Courses
+// //               <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
+// //                 &gt;
+// //               </span>
+// //             </span>
 // //           </button>
 // //         </div>
 // //       </div>
 
-// //       {/* Arrows */}
+// //       {/* Arrows - Always visible on mobile, hover on desktop */}
 // //       <button
-// //   onClick={prevSlide}
-// //   className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
-// // >
-// //   ‹
-// // </button>
-
-// // <button
-// //   onClick={nextSlide}
-// //   className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
-// // >
-// //   ›
-// // </button>
-
+// //         onClick={prevSlide}
+// //         className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
+// //       >
+// //         ‹
+// //       </button>
+// //       <button
+// //         onClick={nextSlide}
+// //         className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
+// //       >
+// //         ›
+// //       </button>
 
 // //       {/* Dots */}
-// //       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+// //       <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
 // //         {slides.map((_, index) => (
 // //           <button
 // //             key={index}
 // //             onClick={() => goToSlide(index)}
-// //             className={`w-2 h-2 rounded-full transition-all duration-300 ${
+// //             className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
 // //               current === index ? 'bg-white scale-125' : 'bg-white/50'
 // //             }`}
 // //           />
 // //         ))}
 // //       </div>
 // //     </section>
-// //   )
-// // }
+// //   );
+// // };
 
-// // export default Hero
+// // export default Hero;
 
 
-// import React, { useState, useEffect } from 'react'
-// import home1 from '../assets/home-1.png'
-// import home2 from '../assets/home-2.png'
 
+// import React, { useState, useEffect } from 'react';
+// import home1 from '../assets/home-1.png';
+// import home2 from '../assets/home-2.png';
 
 // const slides = [
 //   {
 //     image: home1,
 //     heading: 'Find courses that are best\nfor your career',
-//     subtext:
-//       'Grow your skillset with the best online courses and certifications in management, technology, programming, and data science.',
+//     subtext: 'Grow your skillset with the best online courses and certifications in management, technology, programming, and data science.',
 //   },
 //   {
 //     image: home2,
 //     heading: 'Accelerate Your Career\nGrowth & Upskill Yourself',
-//     subtext:
-//       'Take online IT courses to advance your education and jumpstart your career in information technology.',
+//     subtext: 'Take online IT courses to advance your education and jumpstart your career in information technology.',
 //   },
-// ]
+// ];
 
 // const Hero = () => {
-//   const [current, setCurrent] = useState(0)
-//   const [animateKey, setAnimateKey] = useState(0)
+//   const [current, setCurrent] = useState(0);
+//   const [animateKey, setAnimateKey] = useState(0);
 
 //   useEffect(() => {
 //     const timer = setInterval(() => {
 //       setCurrent((prev) => {
-//         const next = prev === slides.length - 1 ? 0 : prev + 1
-//         setAnimateKey(Date.now())
-//         return next
-//       })
-//     }, 5000)
-//     return () => clearInterval(timer)
-//   }, [])
+//         const next = prev === slides.length - 1 ? 0 : prev + 1;
+//         setAnimateKey(Date.now());
+//         return next;
+//       });
+//     }, 5000);
+//     return () => clearInterval(timer);
+//   }, []);
 
 //   const goToSlide = (index) => {
 //     if (index !== current) {
-//       setCurrent(index)
-//       setAnimateKey(Date.now())
+//       setCurrent(index);
+//       setAnimateKey(Date.now());
 //     }
-//   }
+//   };
 
 //   const prevSlide = () => {
-//     const newIndex = current === 0 ? slides.length - 1 : current - 1
-//     setCurrent(newIndex)
-//     setAnimateKey(Date.now())
-//   }
+//     const newIndex = current === 0 ? slides.length - 1 : current - 1;
+//     setCurrent(newIndex);
+//     setAnimateKey(Date.now());
+//   };
 
 //   const nextSlide = () => {
-//     const newIndex = current === slides.length - 1 ? 0 : current + 1
-//     setCurrent(newIndex)
-//     setAnimateKey(Date.now())
-//   }
+//     const newIndex = current === slides.length - 1 ? 0 : current + 1;
+//     setCurrent(newIndex);
+//     setAnimateKey(Date.now());
+//   };
 
 //   return (
-//     // <section className="group relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
-//     <section className="relative w-full min-h-[100vh] flex items-end overflow-hidden pb-[40px]">
-
+//     <section className="relative w-full min-h-screen flex items-end md:items-end overflow-hidden">
 //       {/* Background Image */}
 //       <div
-//   className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-all duration-500"
-//   style={{
-//     backgroundImage: `url('${slides[current].image}')`,
-//   }}
-// />
-
+//         className="absolute inset-0 bg-cover md:bg-contain bg-center bg-no-repeat transition-all duration-500"
+//         style={{ backgroundImage: `url('${slides[current].image}')` }}
+//       />
 
 //       {/* Dark Overlay */}
 //       <div className="absolute inset-0 bg-[#11061f]/80" />
 
-//       {/* Content */}
-//       <div className="relative z-10 w-full px-6 md:px-12 lg:pl-32 pb-[40px]">
+//       {/* Content - Adjusted for mobile */}
+//       <div className="relative z-10 w-full px-6 md:px-12 lg:px-32 pb-16 md:pb-16 pt-[30vh] md:pt-0">
 //         <div
 //           key={animateKey}
 //           className="max-w-4xl text-white animate-fade-slide"
 //         >
-//           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-snug md:leading-tight whitespace-pre-line mb-4">
+//           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight whitespace-pre-line mb-4">
 //             {slides[current].heading}
 //           </h1>
-//           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-3xl">
+//           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl">
 //             {slides[current].subtext}
 //           </p>
-//           {/* <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-md transition">
-//             Explore Courses
-//           </button> */}
-//         <button className="group bg-orange-500 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-md transition flex items-center">
-//   <span className="relative flex items-center">
-//     Explore Courses
-//     <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
-//       &gt;
-//     </span>
-//   </span>
-// </button>
-
-
-
+//           <button className="group bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-md transition flex items-center">
+//             <span className="relative flex items-center">
+//               Explore Courses
+//               <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
+//                 &gt;
+//               </span>
+//             </span>
+//           </button>
 //         </div>
 //       </div>
 
-//       {/* Arrows */}
+//       {/* Arrows - Always visible on mobile, hover on desktop */}
 //       <button
 //         onClick={prevSlide}
-//         className="absolute left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+//         className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
 //       >
 //         ‹
 //       </button>
 //       <button
 //         onClick={nextSlide}
-//         className="absolute right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-5xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-orange-500"
+//         className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
 //       >
 //         ›
 //       </button>
 
-//       {/* Dots */}
-//       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+//       {/* Dots - Position adjusted for new content placement */}
+//       <div className="absolute bottom-6 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
 //         {slides.map((_, index) => (
 //           <button
 //             key={index}
 //             onClick={() => goToSlide(index)}
-//             className={`w-2 h-2 rounded-full transition-all duration-300 ${
+//             className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
 //               current === index ? 'bg-white scale-125' : 'bg-white/50'
 //             }`}
 //           />
 //         ))}
 //       </div>
 //     </section>
-//   )
-// }
+//   );
+// };
 
 // export default Hero;
-
-
 
 
 import React, { useState, useEffect } from 'react';
@@ -260,12 +497,12 @@ import home2 from '../assets/home-2.png';
 const slides = [
   {
     image: home1,
-    heading: 'Find courses that are best\nfor your career',
+    heading: 'Find courses that are best for your career',
     subtext: 'Grow your skillset with the best online courses and certifications in management, technology, programming, and data science.',
   },
   {
     image: home2,
-    heading: 'Accelerate Your Career\nGrowth & Upskill Yourself',
+    heading: 'Accelerate Your Career Growth & Upskill Yourself',
     subtext: 'Take online IT courses to advance your education and jumpstart your career in information technology.',
   },
 ];
@@ -305,55 +542,57 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen flex items-end overflow-hidden pb-10 md:pb-16">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover md:bg-contain bg-center bg-no-repeat transition-all duration-500"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
         style={{ backgroundImage: `url('${slides[current].image}')` }}
       />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[#11061f]/80" />
 
-      {/* Content */}
-      <div className="relative z-10 w-full px-6 md:px-12 lg:px-32 pb-10 md:pb-16">
+      {/* Content - Adjusted for better mobile display */}
+      <div className="relative z-10 w-full px-6 sm:px-8 md:px-12 lg:px-32 py-12">
         <div
           key={animateKey}
           className="max-w-4xl text-white animate-fade-slide"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight whitespace-pre-line mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-snug md:leading-tight mb-4 text-center md:text-left">
             {slides[current].heading}
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto md:mx-0 text-center md:text-left">
             {slides[current].subtext}
           </p>
-          <button className="group bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-md transition flex items-center">
-            <span className="relative flex items-center">
-              Explore Courses
-              <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
-                &gt;
+          <div className="flex justify-center md:justify-start">
+            <button className="group bg-orange-500 hover:bg-orange-600 text-white font-medium sm:font-bold py-2 px-4 md:py-3 md:px-6 rounded-md transition flex items-center text-sm sm:text-base">
+              <span className="relative flex items-center">
+                Explore Courses
+                <span className="ml-2 opacity-0 transform translate-x-0 group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300">
+                  &gt;
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Arrows - Always visible on mobile, hover on desktop */}
+      {/* Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
+        className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 hover:opacity-100 transition-opacity duration-300"
       >
         ‹
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300 hover:text-orange-500 hover:opacity-100"
+        className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl sm:text-4xl md:text-5xl opacity-70 hover:opacity-100 transition-opacity duration-300"
       >
         ›
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
