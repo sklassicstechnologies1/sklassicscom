@@ -185,7 +185,7 @@ const courses = [
   { title: "C Programming", duration: "60 Days", price: "₹20,000", image: courseimg20 },
   { title: "Java Programming", duration: "3 Months", price: "₹25,000", image: courseimg21 },
   { title: "R Programming", duration: "3 Months", price: "₹30,000", image: courseimg22 },
-  { title: "Flask ", duration: "4 Months", price: "₹45,000", image: courseimg23 },
+  { title: "Flask", duration: "4 Months", price: "₹45,000", image: courseimg23 },
   { title: "Aptitude", duration: "4 Months", price: "₹45,000", image: courseimg24 },
 ];
 

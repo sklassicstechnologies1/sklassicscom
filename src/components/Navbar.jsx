@@ -319,21 +319,14 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      {/* Top Bar with white icons - Added pr-[10%] for 10% right padding */}
-      <div className="text-white text-xs sm:text-sm px-2 sm:px-4 py-1 flex justify-between "  style={{ backgroundColor: "#4f1964" }}>
-      
+      {/* Top Bar - Keep this as is */}
+      <div className="text-white text-xs sm:text-sm px-2 sm:px-4 py-1 flex justify-between" style={{ backgroundColor: "#4f1964" }}>
         <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 ml-[10%]">
-          <a 
-            href="tel:+919392732581" 
-            className="flex items-center gap-1 hover:text-white"
-          >
+          <a href="tel:+919392732581" className="flex items-center gap-1 hover:text-white">
             <FaPhone className="text-white" />
             <span>+91 9392732581</span>
           </a>
-          <a 
-            href="mailto:sklassicsedutech@gmail.com" 
-            className="flex items-center gap-1 hover:text-white"
-          >
+          <a href="mailto:sklassicsedutech@gmail.com" className="flex items-center gap-1 hover:text-white">
             <FaEnvelope className="text-white" />
             <span>sklassicsedutech@gmail.com</span>
           </a>
@@ -344,7 +337,7 @@ export const Navbar = () => {
       <nav className="bg-white shadow-md relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-3 sm:py-4 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-4 sm:space-x-9">
+          <NavLink to="/" className="flex items-center">
             <img
               src="https://sklassics.com/wp-content/uploads/2024/06/Sklassics.png"
               alt="Sklassics Logo"
@@ -352,7 +345,7 @@ export const Navbar = () => {
             />
           </NavLink>
 
-          {/* Desktop Menu */}
+          {/* Desktop Menu - Keep as is */}
           <ul className="hidden md:flex items-center gap-4 lg:gap-6 text-gray-600 font-semibold text-xs sm:text-sm">
             {[
               { to: '/', label: 'Home' },
@@ -365,12 +358,7 @@ export const Navbar = () => {
               { to: '/login', label: 'Login/Signup' },
             ].map(({ to, label }) => (
               <li key={to}>
-                <NavLink
-                  to={to}
-                  className={({ isActive }) =>
-                    isActive ? activeStyle : baseStyle
-                  }
-                >
+                <NavLink to={to} className={({ isActive }) => isActive ? activeStyle : baseStyle}>
                   {label}
                 </NavLink>
               </li>
@@ -379,11 +367,7 @@ export const Navbar = () => {
 
           {/* Mobile Hamburger */}
           <div className="md:hidden flex items-center">
-            <button 
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
-              className="p-2 focus:outline-none"
-            >
+            <button onClick={toggleMenu} aria-label="Toggle menu" className="p-2 focus:outline-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -403,25 +387,18 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Panel with 0.2% gap from navbar bottom */}
+        {/* Mobile Menu Panel - Modified to match first image */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -20, height: 0 }}
-              animate={{ 
-                opacity: 1, 
-                y: '0.2%',
-                height: "auto"
-              }}
-              exit={{ opacity: 0, y: -20, height: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2 }}
               className="absolute top-full left-0 right-0 bg-white shadow-md overflow-hidden z-40"
-              style={{
-                marginTop: '0.05rem'
-              }}
             >
-              <div className="px-8 py-4">
-                <ul className="flex flex-col items-center space-y-6">
+              <div className="px-4 py-2"> {/* Reduced padding */}
+                <ul className="space-y-1"> {/* Minimal spacing between items */}
                   {[
                     { to: '/', label: 'Home' },
                     { to: '/about', label: 'About Us' },
@@ -432,12 +409,10 @@ export const Navbar = () => {
                     { to: '/contact', label: 'Contact Us' },
                     { to: '/login', label: 'Login/Signup' },
                   ].map(({ to, label }) => (
-                    <li key={to} className="text-center w-full">
+                    <li key={to} className="py-1"> {/* Small padding */}
                       <NavLink
                         to={to}
-                        className={({ isActive }) =>
-                          isActive ? activeStyle : baseStyle
-                        }
+                        className={({ isActive }) => isActive ? activeStyle : baseStyle}
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {label}

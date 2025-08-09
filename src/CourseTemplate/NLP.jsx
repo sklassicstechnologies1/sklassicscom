@@ -344,21 +344,17 @@ Coming Transformation To An AI-Powered Future.
         <div className="relative py-16">
           {/* Background Image Overlay with Light Purple Tint */}
           <div 
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `
-                linear-gradient(
-                  rgba(124, 58, 237, 0.35), 
-                  rgba(124, 70, 237, 0.35)
-                ),
-                url(${azureImage})
-              `,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundAttachment: 'fixed',
-              opacity: 0.85
-            }}
-          ></div>
+  className="absolute inset-0"
+  style={{
+    backgroundImage: `url(${azureImage})`,
+    backgroundColor: 'rgba(15, 0, 25, 0.93)',
+    backgroundBlendMode: 'overlay',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    opacity: 0.85
+  }}
+></div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

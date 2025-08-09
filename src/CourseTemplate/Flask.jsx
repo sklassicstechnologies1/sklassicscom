@@ -13,27 +13,38 @@ const Flask = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6 py-10 pt-32"
-        style={{ backgroundImage: `url(${courseimg23})` }}
-      >
-        <div className="absolute inset-0 bg-black/60 z-0" />
+  className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-4 sm:px-6 pt-40 md:pt-48 pb-10"
+  style={{ backgroundImage: `url(${courseimg23})` }}
+>
+  <div className="absolute inset-0 bg-black/60 z-0" />
 
-        <div className="relative z-20 max-w-4xl">
-          <h1 className="text-5xl font-extrabold mb-10">Flask Programming</h1>
+  <div className="relative z-20 max-w-4xl px-4 sm:px-6">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8 md:mb-10">Flask Programming</h1>
 
-          <ul className="space-y-4 text-lg leading-relaxed">
-            <li>Master Flask Framework</li>
-            <li>Build real-world projects</li>
-            <li>Learn with industry standards</li>
-            <li>Learn Flask Framework from Basics to Advanced Topics</li>
-          </ul>
+    <ul className="space-y-2 sm:space-y-3 md:space-y-4 text-base sm:text-lg leading-relaxed">
+      <li>Master Flask Framework</li>
+      <li>Build real-world projects</li>
+      <li>Learn with industry standards</li>
+      <li>Learn Flask Framework from Basics to Advanced Topics</li>
+    </ul>
+    
+    {/* <div className="mt-4 sm:mt-6">
+      <h3 className="text-white font-bold text-sm sm:text-base md:text-lg">
+        Course Duration: 4 Months
+      </h3>
+      <a href="tel:+919392732341" className="text-white text-sm sm:text-base mt-1 block">
+        +91 9392732341
+      </a>
+    </div> */}
 
-          <button className="mt-10 bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-yellow-300 transition-all">
-            Buy for ₹25,000
-          </button>
-        </div>
-      </section>
-
+    <button className="mt-6 sm:mt-8 md:mt-10 bg-[#b7b100] text-white text-base sm:text-lg md:text-[20px] font-medium px-4 py-2 sm:px-4 sm:py-2 border-0 rounded-[3px] leading-normal sm:leading-[1.7em] shadow-md group flex items-center gap-2 transition-all duration-300">
+      <span>Buy for ₹25,000</span>
+      <span className="text-2xl sm:text-3xl md:text-4xl transform translate-x-[-8px] sm:translate-x-[-10px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        ›
+      </span>
+    </button>
+  </div>
+</section>
       {/* Main Content Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
         <div className="grid lg:grid-cols-3 gap-10">
@@ -71,36 +82,33 @@ const Flask = () => {
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Curriculum</h2>
               <div className="space-y-3">
-                <div className="group border bg-[#4f1964] rounded overflow-hidden">
-                  <div className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                    <span className="font-bold">Flask Programming</span>
-                  </div>
-                  <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                    <p>Content will be updated soon</p>
-                  </div>
-                </div>
-                
-                <div className="group border bg-[#4f1964] rounded overflow-hidden">
-                  <div className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                    <span className="font-bold">SQL for Flask</span>
-                  </div>
-                  <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                    <p>Content will be updated soon</p>
-                  </div>
-                </div>
-                
-                <div className="group border border-purple-800 rounded overflow-hidden">
-                  <div className="bg-purple-900 text-white px-4 py-3 cursor-pointer flex justify-between items-center">
-                    <span className="font-bold">JavaScript Integration</span>
-                  </div>
-                  <div className="bg-white px-4 py-3 text-gray-800 text-sm space-y-2">
-                    <p>Content will be updated soon</p>
-                  </div>
-                </div>
+                {[
+                  "Flask Programming",
+                //   "Object-Oriented Programming",
+                //   "Java Collections Framework",
+                //   "Exception Handling",
+                //   "Multithreading",
+                //   "JDBC and Database Connectivity",
+                //   "Java 8 Features",
+                //   "Building Real-World Applications"
+                ].map((item, index) => (
+                  <details
+                    key={index}
+                    className="group border bg-[#4f1964] rounded overflow-hidden"
+                  >
+                    <summary className="bg-[#4f1964] text-white px-4 py-3 cursor-pointer flex justify-between items-center">
+                      <span>{item}</span>
+                      <span className="text-xl font-bold group-open:hidden">+</span>
+                      <span className="text-xl font-bold hidden group-open:block">-</span>
+                    </summary>
+                    <div className="bg-white px-4 py-3 text-gray-800 text-sm">
+                      <p>soon content will be updated</p>
+                    </div>
+                  </details>
+                ))}
               </div>
             </div>
           </div>
-
           {/* Right Side: Corporate Training Card */}
           <div className="sticky top-24 self-start">
             <div className="bg-blue-100 p-6 rounded-md shadow-md space-y-6">
@@ -232,21 +240,17 @@ const Flask = () => {
         <div className="relative py-16">
           {/* Background Image Overlay with Light Purple Tint */}
           <div 
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `
-                linear-gradient(
-                  rgba(124, 58, 237, 0.35), 
-                  rgba(124, 70, 237, 0.35)
-                ),
-                url(${azureImage})
-              `,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundAttachment: 'fixed',
-              opacity: 0.85
-            }}
-          ></div>
+  className="absolute inset-0"
+  style={{
+    backgroundImage: `url(${azureImage})`,
+    backgroundColor: 'rgba(15, 0, 25, 0.93)',
+    backgroundBlendMode: 'overlay',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    opacity: 0.85
+  }}
+></div>
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

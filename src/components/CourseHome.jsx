@@ -143,12 +143,12 @@ const courses = [
 
 // Map course titles to their respective routes
 const courseRouteMap = {
-  'Data Science': '/Data Science',
-  'Data Analytics': '/DataAnalytics',
-  'Power BI': '/powerbi',
-  'Machine Learning': '/MachineLearning',
-  'NLP': '/Natural Language Processing',
-  'Computer Vision': '/ComputerVision'
+  "Data Science": "/data-science-basic",
+  "Data Analytics": "/data-analytics",
+  "Power BI": "/powerbi",
+  "Machine Learning": "/machine-learning",
+  "Natural Language Processing": "/natural-language-processing",
+  "Computer Vision": "/computer-vision",
 }
 
 const CourseHome = () => {
